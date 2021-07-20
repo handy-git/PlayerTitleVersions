@@ -22,6 +22,16 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 查询称号
+     *
+     * @param titleId 称号唯一编号id
+     * @return true/存在
+     */
+    public boolean findByTitleId(Long titleId) {
+        return true;
+    }
+
+    /**
      * 新增称号
      *
      * @param titleListParam 入参
