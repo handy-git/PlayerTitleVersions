@@ -6,4 +6,4 @@
 并把称号唯一id保存在附属插件的yml或者数据库中进行永久保存
 2. 根据玩家名和这个称号的唯一id将称号给予玩家
 
-具体查询: ApiTest类或者javadoc
+具体查询: ApiTest类或者[javadoc](https://handy-git.github.io/PlayerTitleVersions/ "javadoc")
