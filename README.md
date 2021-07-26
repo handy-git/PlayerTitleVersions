@@ -5,8 +5,9 @@
 ## 使用方法
 
 #### 初始化jar
-下载代码中的PlayerTitle-2.5.9.jar  或者releases里的jar文件导入你的项目中
-或者使用maven引入依赖(本地机器私库,有时候不在线)
+- 下载代码中的PlayerTitle-2.5.9.jar   
+- 或者下载releases里的jar文件导入你的项目中
+- 或者使用maven引入依赖(本地机器私库,有时候不在线)
 
 ```
 <repositories>
