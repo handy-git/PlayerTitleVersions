@@ -3,7 +3,7 @@
 #### 使用方法
 
 ###### 初始化
-下载代码中的PlayerTitle-2.5.9.jar文件导入你的项目中
+下载代码中的PlayerTitle-2.5.9.jar文件导入你的项目中  
 或者使用maven(本地机器私库,有时候关机不在线)
 
  <repositories>
