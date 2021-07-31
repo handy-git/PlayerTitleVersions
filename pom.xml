@@ -8,7 +8,7 @@
     <artifactId>PlayerTitle</artifactId>
     <name>PlayerTitle</name>
     <version>2.8.0</version>
-    <description>一个有点好用的称号插件!</description>
+    <description>PlayerTitleApi!</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
