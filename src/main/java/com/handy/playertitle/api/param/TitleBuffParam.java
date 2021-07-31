@@ -1,6 +1,7 @@
 package com.handy.playertitle.api.param;
 
 import com.handy.playertitle.constants.BuffTypeEnum;
+import lombok.Data;
 
 /**
  * buff效果
@@ -8,6 +9,7 @@ import com.handy.playertitle.constants.BuffTypeEnum;
  * @author handy
  * @since 2.7.9
  */
+@Data
 public class TitleBuffParam {
 
     /**
@@ -20,19 +22,9 @@ public class TitleBuffParam {
      */
     private String buffContent;
 
-    public BuffTypeEnum getBuffType() {
-        return buffType;
-    }
+    /**
+     * 药水效果
+     */
+    private PotionEffectParam potionEffectParam;
 
-    public void setBuffType(BuffTypeEnum buffType) {
-        this.buffType = buffType;
-    }
-
-    public String getBuffContent() {
-        return buffContent;
-    }
-
-    public void setBuffContent(String buffContent) {
-        this.buffContent = buffContent;
-    }
 }

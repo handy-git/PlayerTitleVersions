@@ -15,6 +15,12 @@ import java.util.List;
  * @author handy
  */
 public class ApiTest {
+
+    /**
+     * 单元测试
+     *
+     * @param args 入参
+     */
     public static void main(String[] args) {
         // 1. 先保存唯一id到你的插件，可以保存到yml，或者数据库
         // 拿着保存的id去查询是否有该称号，有的话就跳过，没有的话就初始化新增这个称号
