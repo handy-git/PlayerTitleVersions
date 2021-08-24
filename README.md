@@ -5,22 +5,22 @@
 ## 使用方法
 
 #### 初始化jar
-- 下载代码中的PlayerTitle-2.5.9.jar   
+- 下载代码中repo文件夹的PlayerTitle-2.8.1.jar   
 - 或者下载releases里的jar文件导入你的项目中
-- 或者使用maven引入依赖(本地机器私库,有时候不在线)
+- 或者使用maven引入依赖
 
 ```
 <repositories>
-    <repository>
-        <id>minecraft</id>
-        <url>http://23.224.140.154:18208/repository/minecraft/</url>
-    </repository>
+   <repository>
+      <id>player-title</id>
+      <url>https://raw.githubusercontent.com/handy-git/PlayerTitleVersions/master/repo</url>
+   </repository>
 </repositories>
 
 <dependency>
   <groupId>com.handy.playertitle</groupId>
   <artifactId>PlayerTitle</artifactId>
-  <version>2.7.9</version>
+  <version>2.8.1</version>
 </dependency>
 ```
 
