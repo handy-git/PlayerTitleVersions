@@ -14,9 +14,6 @@ import java.util.*;
 @Builder
 public class BuyType {
 
-    private BuyType() {
-    }
-
     private static Map<String, BuyType> BUY_TYPE_LIST = new LinkedHashMap<>();
     @Getter
     private String buyType;

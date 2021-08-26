@@ -42,7 +42,7 @@ public class ApiTest {
     public static Long add() {
         TitleListParam titleListParam = new TitleListParam();
         titleListParam.setTitleName("称号名称");
-        titleListParam.setBuyTypeEnum(BuyTypeEnum.NOT);
+        titleListParam.setBuyType(BuyTypeEnum.NOT.getBuyType());
         titleListParam.setAmount(0);
         titleListParam.setDay(0);
         titleListParam.setItemStack(null);
