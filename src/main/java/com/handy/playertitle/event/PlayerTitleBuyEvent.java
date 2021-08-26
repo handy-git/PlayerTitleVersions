@@ -61,6 +61,7 @@ public class PlayerTitleBuyEvent extends Event {
     /**
      * 判断是否是自己插件的类型
      *
+     * @param pluginName 插件名字
      * @return 类型
      */
     public boolean isBuyType(String pluginName) {

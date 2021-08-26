@@ -38,6 +38,8 @@ public class PotionEffectParam implements Serializable {
 
     /**
      * 药水原名称
+     *
+     * @param potionName 名称
      */
     public void setPotionName(String potionName) {
         this.potionName = potionName;
@@ -54,6 +56,8 @@ public class PotionEffectParam implements Serializable {
 
     /**
      * 药水汉化名称
+     *
+     * @param potionChinesizationName 药水汉化名称
      */
     public void setPotionChinesizationName(String potionChinesizationName) {
         this.potionChinesizationName = potionChinesizationName;
@@ -70,6 +74,8 @@ public class PotionEffectParam implements Serializable {
 
     /**
      * 药水等级
+     *
+     * @param potionLevel 药水等级
      */
     public void setPotionLevel(Integer potionLevel) {
         this.potionLevel = potionLevel;
