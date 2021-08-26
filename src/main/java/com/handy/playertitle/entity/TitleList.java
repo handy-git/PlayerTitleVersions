@@ -1,17 +1,19 @@
-package com.handy.playertitle.api.param;
+package com.handy.playertitle.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
- * 新增称号入参
+ * 称号列表
  *
  * @author handy
- * @since 2.7.9
  */
 @Data
-public class TitleListParam {
+public class TitleList implements Serializable {
+
+    private Long id;
 
     /**
      * 称号名称
@@ -51,15 +53,10 @@ public class TitleListParam {
     /**
      * buff列表
      */
-    private List<TitleBuffParam> titleBuffs;
+    private List<TitleBuff> titleBuffs;
 
     /**
      * 粒子列表
      */
-    private TitleParticleParam titleParticle;
-
-    /**
-     * 是否添加默认的前后缀
-     */
-    private Boolean isPrefixAndSuffix;
+    private TitleParticle titleParticle;
 }

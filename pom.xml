@@ -13,6 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.20</lombok.version>
+        <spigot-api.vesion>1.17.1-R0.1-SNAPSHOT</spigot-api.vesion>
     </properties>
 
     <dependencies>
@@ -20,6 +21,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>${spigot-api.vesion}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

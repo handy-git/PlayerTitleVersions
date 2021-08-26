@@ -1,6 +1,10 @@
 package com.handy.playertitle.api;
 
+import com.handy.playertitle.api.param.TitleBuffParam;
 import com.handy.playertitle.api.param.TitleListParam;
+import com.handy.playertitle.api.param.TitleParticleParam;
+
+import java.util.List;
 
 /**
  * PlayerTitleApi
@@ -17,13 +21,20 @@ public class PlayerTitleApi {
         private static final PlayerTitleApi INSTANCE = new PlayerTitleApi();
     }
 
-    /**
-     * 获取 INSTANCE
-     *
-     * @return INSTANCE
-     */
     public static PlayerTitleApi getInstance() {
         return PlayerTitleApi.SingletonHolder.INSTANCE;
+    }
+
+    /**
+     * 新增称号购买类型
+     *
+     * @param buyType     购买类型
+     * @param buyTypeName 购买类型名称
+     * @param pluginName  注册插件名称
+     * @return true/成功
+     */
+    public boolean addBuyType(String buyType, String buyTypeName, String pluginName) {
+        return true;
     }
 
     /**
@@ -47,6 +58,71 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 添加称号buff
+     *
+     * @param titleId    称号id
+     * @param titleBuffs 称号buff
+     * @return true/成功
+     */
+    public boolean addTitleBuff(Long titleId, List<TitleBuffParam> titleBuffs) {
+        return true;
+    }
+
+    /**
+     * 删除称号buff
+     *
+     * @param titleId 称号id
+     * @return true/成功
+     */
+    public boolean removeTitleBuff(Long titleId) {
+        return true;
+    }
+
+    /**
+     * 添加称号粒子
+     *
+     * @param titleId            称号id
+     * @param titleParticleParam 称号粒子
+     * @return true/成功
+     */
+    public boolean addTitleParticle(Long titleId, TitleParticleParam titleParticleParam) {
+        return true;
+    }
+
+    /**
+     * 删除称号粒子
+     *
+     * @param titleId 称号id
+     * @return true/成功
+     */
+    public boolean removeTitleParticle(Long titleId) {
+        return true;
+    }
+
+    /**
+     * 更改名称
+     *
+     * @param titleId           称号id
+     * @param titleName         称号名称
+     * @param isPrefixAndSuffix 是否使用默认前后缀
+     * @return true/成功
+     */
+    public boolean update(Long titleId, String titleName, boolean isPrefixAndSuffix) {
+        return true;
+    }
+
+    /**
+     * 更改描述
+     *
+     * @param titleId     称号id
+     * @param description 描述
+     * @return true/成功
+     */
+    public boolean updateDescription(Long titleId, String description) {
+        return true;
+    }
+
+    /**
      * 给玩家称号
      *
      * @param playerName 玩家名
@@ -55,7 +131,7 @@ public class PlayerTitleApi {
      * @return true/成功
      */
     public boolean set(String playerName, Long titleId, int day) {
-        return false;
+        return true;
     }
 
 }
