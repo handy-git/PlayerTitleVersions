@@ -1,10 +1,15 @@
 package com.handy.playertitle.constants;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 /**
  * buff类型
  *
  * @author handy
  */
+@Getter
+@AllArgsConstructor
 public enum BuffTypeEnum {
 
     /**
@@ -31,16 +36,4 @@ public enum BuffTypeEnum {
 
     private final String buffType;
 
-    /**
-     * buff类型
-     *
-     * @return buff类型
-     */
-    public String getBuffType() {
-        return buffType;
-    }
-
-    BuffTypeEnum(String buffType) {
-        this.buffType = buffType;
-    }
 }

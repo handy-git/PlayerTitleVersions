@@ -1,10 +1,15 @@
 package com.handy.playertitle.constants;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 /**
  * 购买类型
  *
  * @author handy
  */
+@Getter
+@AllArgsConstructor
 public enum BuyTypeEnum {
     /**
      * 无
@@ -37,16 +42,4 @@ public enum BuyTypeEnum {
 
     private final String buyType;
 
-    /**
-     * 购买类型
-     *
-     * @return 购买类型
-     */
-    public String getBuyType() {
-        return buyType;
-    }
-
-    BuyTypeEnum(String buyType) {
-        this.buyType = buyType;
-    }
 }
