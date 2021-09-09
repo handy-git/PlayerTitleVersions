@@ -33,7 +33,7 @@
 
     <distributionManagement>
         <repository>
-            <id>lwj-mvn-repo</id>
+            <id>PlayerTitle-repo</id>
             <url>file:${basedir}/repo</url>
         </repository>
     </distributionManagement>

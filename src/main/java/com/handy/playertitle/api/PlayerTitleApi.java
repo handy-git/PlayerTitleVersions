@@ -3,6 +3,8 @@ package com.handy.playertitle.api;
 import com.handy.playertitle.api.param.TitleBuffParam;
 import com.handy.playertitle.api.param.TitleListParam;
 import com.handy.playertitle.api.param.TitleParticleParam;
+import com.handy.playertitle.entity.TitlePlayer;
+import org.bukkit.entity.Player;
 
 import java.util.List;
 
@@ -132,6 +134,58 @@ public class PlayerTitleApi {
      */
     public boolean set(String playerName, Long titleId, int day) {
         return true;
+    }
+
+    /**
+     * 获取玩家正在使用的称号信息
+     *
+     * @param player 玩家
+     * @return 称号
+     */
+    public TitlePlayer findByPlayerNameAndIsUse(Player player) {
+        return null;
+    }
+
+    /**
+     * 获取玩家称号币
+     *
+     * @param playerName 玩家名
+     * @return 称号币
+     */
+    public Long getPlayerCoinNum(String playerName) {
+        return 0L;
+    }
+
+    /**
+     * 增加玩家称号币
+     *
+     * @param playerName 玩家名
+     * @param amount     数量
+     * @return true/成功
+     */
+    public boolean addCoin(String playerName, Long amount) {
+        return true;
+    }
+
+    /**
+     * 减少玩家称号币
+     *
+     * @param playerName 玩家名
+     * @param amount     数量
+     * @return true/成功
+     */
+    public boolean subtractCoin(String playerName, Long amount) {
+        return true;
+    }
+
+    /**
+     * 获取玩家称号数量
+     *
+     * @param playerName 玩家名
+     * @return 称号数量
+     */
+    public Integer getPlayerTitleNum(String playerName) {
+        return 0;
     }
 
 }
