@@ -40,6 +40,19 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 新增称号Buff类型
+     *
+     * @param buffType     buff类型
+     * @param buffTypeName buff类型名称
+     * @param pluginName   注册插件名称
+     * @return true/成功
+     * @since 2.8.4
+     */
+    public boolean addBuffType(String buffType, String buffTypeName, String pluginName) {
+        return true;
+    }
+
+    /**
      * 查询称号
      *
      * @param titleId 称号唯一编号id

@@ -13,6 +13,9 @@ import java.util.List;
 @Data
 public class TitleList implements Serializable {
 
+    /**
+     * id
+     */
     private Long id;
 
     /**

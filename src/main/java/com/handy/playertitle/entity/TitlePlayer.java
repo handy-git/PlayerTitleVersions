@@ -15,6 +15,9 @@ import java.util.List;
 @Data
 public class TitlePlayer implements Serializable {
 
+    /**
+     * id
+     */
     private Long id;
 
     /**

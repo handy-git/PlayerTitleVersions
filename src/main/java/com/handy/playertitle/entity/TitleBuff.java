@@ -11,6 +11,9 @@ import java.io.Serializable;
  */
 @Data
 public class TitleBuff implements Serializable {
+    /**
+     * id
+     */
     private Long id;
 
     /**
