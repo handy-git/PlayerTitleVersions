@@ -1,0 +1,602 @@
+# Alert when you don't have permission
+noPermission: "&4 you do not have permission to execute this command"
+
+# Remind when reloading plugins
+reloadMsg: "&a plugin reload complete"
+
+# Reminder when player title is expired
+overdueMsg: "&4Your title has expired"
+
+# vault reminder
+vaultSucceedMsg: "&a successfully loaded Vault, enabling economy-related features!"
+vaultFailureMsg: "&4Vault not found, economy-related features not enabled!"
+
+# placeholderAPI alert
+placeholderAPISucceedMsg: "&a successfully loaded placeholderApi, enable custom variable function!"
+placeholderAPIFailureMsg: "&4 no placeholderApi found, custom variables not enabled!"
+
+# PlayerPointsAlerts
+playerPointsSucceedMsg: "&a successfully loaded PlayerPoints, enable points related features!"
+playerPointsFailureMsg: "&4PlayerPoints not found, point-related features not enabled!"
+
+# attributePlus alert
+attributePlusSucceedMsg: "&a successfully loaded attributePlus, enabling attribute tag-related functionality!"
+attributePlusFailureMsg: "&4 attributePlus not found, attribute tag related functionality not enabled!"
+
+# SXAttributeSucceed
+sxAttributeSucceedMsg: "&a successfully loaded SXAttribute, enable attribute tag related functionality!"
+sxAttributeFailureMsg: "&4SXAttribute not found, attribute tag related functionality not enabled!"
+
+# superTrails alert
+superTrailsSucceedMsg: "&a successfully loaded SuperTrails, enable particle effect related features!"
+superTrailsFailureMsg: "&4No SuperTrails found, no particle effect related features enabled!"
+
+# PlayerIntensify reminder
+playerIntensifySucceedMsg: "&a successfully loaded PlayerIntensify, enable player enhancement related features!"
+playerIntensifyFailureMsg: "&4 PlayerIntensify not found, player enhancement related features not enabled!"
+
+# MmoItems alert
+mmoItemsSucceedMsg: "&a successfully loaded MmoItems, enable MmoItems buff related functions!"
+mmoItemsFailureMsg: "&4MmoItems not found, MmoItems buff related features not enabled!"
+
+# PlayerParticles reminder
+playerParticlesSucceedMsg: "& a successfully loaded PlayerParticles, to enable PlayerParticles particle effects!"
+playerParticlesFailureMsg: "& 4 not found PlayerParticles, not enabled for PlayerParticles particle effects!"
+
+# /plt help command administrator alerts appear
+helps:
+  - "&e&m one-one-one one-one-one one-one-one &f[&ePlayerTitle&f]&e&m one-one-one one-one-one one-one-one one"
+  - "&e/plt addCoin [player name] [amount] &f add title coin to player"
+  - "&e/plt add [title type] [title name] [amount] (days) (hidden or not) (player name) &f add a new title to the title mall"
+  - "&e/plt addPermission [title name] [requires permission] &f add a permission title"
+  - "&e/plt addPlayerTitle [player name] [title name] (days) &f add a new title that is not displayed in the store and give it directly to the player"
+  - "&e/plt addReward [Number of Titles] [Type] [Amount] &f Add a reward to the corresponding number of titles"
+  - "&e/plt changeItem [title id] [days] [amount] (player name) &f converts the title with the corresponding id into a right clickable item"
+  - "&e/plt randomCard [type] [days] &f get a random title card, days 0 is permanent"
+  - "&e/plt reload &f reload plugin"
+  - "&e/plt set [player name] [title ID] [number of days] &f set the title to the player for the corresponding number of days"
+  - "&e/plt setTitleBuff [title id] [type] [attribute tag] &f add buff attributes to the title"
+  - "&e/plt subtractCoin [player name] [amount] &f subtract title coins to player"
+  - "&e/plt view [type] (player name) &f view the corresponding gui and manage it"
+  - "&e/plt shop &f open title mall gui, optional parameter type, default all if not filled"
+  - "&e/plt open &f open title store gui"
+  - "&e/plt setTitleParticle [title id] [particle type] [particle id] (color) (color) (color)"
+  - "&e/plt removeTitleParticle [title id] &f removeTitleParticle effect"
+  - "&e/plt setDescription [title id] [title description] &f add title description"
+  - "&e/plt getIp &f get server ip address"
+  - "&e/plt listTitle &f query server title list"
+  - "&e/plt adminShop &f open admin title shop gui (equal to command/plt view shop)"
+  - "&e/plt delBuff [buffId] &f delete the corresponding buff according to the buffId"
+  - "&e/plt convert [type] &f convert data, type can be mysql or sqlite"
+  - "&e/plt custom [player name]  &f set custom title"
+  - "&e/plt setCustom [player name] [customizable count] &f set the number of times a player can customize"
+  - "&e/plt addCustom [player name] [customizable count] &f add the number of times a player can customize"
+  - "&e/plt del [id] &f command deletes the title and also deletes the player's ownership of that title"
+  - "&e[] required () optional"
+
+# /plt help command player appears as a reminder
+playerHelps:
+  - "&e&m一一一一一一&f[&ePlayerTitle&f]&e&m一一一一一一"
+  - "&e/plt shop &f open title mall gui"
+  - "&e/plt open &fOpenTitleWarehousegui"
+  - "&e/plt custom [player name]  &f set custom title"
+
+paramFailureMsg: "&4 Parameter Error"
+noPlayerFailureMsg: "&4This command can only be executed by the player."
+typeFailureMsg: "&4 type error"
+amountFailureMsg: "&4 quantity can only be a number greater than 0"
+idFailureMsg: "&4ID can only be a number greater than 0."
+noAir: "&4 there is no item in your lord's hand."
+addSucceedMsg: "&a new title was added successfully, the title id is: ${id}"
+succeedMsg: "&a command executed successfully"
+failureMsg: "&4 command execution failed"
+guiDelete: "&6>>&4>>&5>> &f&l click to delete &6<<&4<<&5<<"
+guiManage: "&6>>&4>>&5>> &f&l click management &6<<&4<<&5<<"
+guiBack: "&a click to return"
+currentPage: "&aCurrentPage:"
+totalPages: "&aTotalPages:"
+nextPage: "&a click to go to next page"
+previousPage: "&a click to go to previous page"
+all: "&a all"
+# Reminder of maximum number of titles
+currlimig: "&4very sorry, the public version creates a maximum of 100 titles"
+customLengthMsg: "&4 designation length exceeds limit"
+
+buyType:
+  not: "&a none"
+  vault: "&a gold coin"
+  playerPoints: "&a Coupons"
+  coin: "&a title coin"
+  itemStack: "&a Item"
+  permission: "&a permission"
+  activity: "&a activity"
+
+set:
+  # No data found for title id
+  noTitleFailureMsg: "&4 No data found for the corresponding title id."
+
+shop:
+  # title
+  title: "&f[&e title mall&f]"
+  buySucceed: "&a purchase successful"
+  buyFailure: "&4Exceptional purchase occurred, please contact administrator!"
+  notSufficientFunds: "&4 purchase failed, your balance is insufficient!"
+  perpetual: "&a perpetual"
+  day: "day"
+  noItemInOffHand: "&4Purchase failed, sub cannot hold the item!"
+  noBuff: "none"
+  back: "&a click to return"
+  buyButton: "&f&l click to buy"
+  noBalanceButton: "&4&l Insufficient Balance"
+  itemStackBuyButton: "&6>>&4>>&5>> &f&l click to buy &6<<&4<<&5<<"
+  itemStackNoBalanceButton: "&6>>&4>>&5>> &f&l insufficient balance &6<<&4<<&5<<"
+  cantBuy: "&6>>&4>>&5>> &f&l campaign to get &6<<&4<<<&5<<"
+  # Serial Number:${id} Title Name:${titleName} Effect:${buff} Purchase Type:${buyType} Price:${price} Player name:${player}
+  # Player Balance:${playerMoney} Number of days to buy:${day} Buy Button:${buyButton} Title Description: ${description}
+  lores:
+    - ''
+    - '&f[ &c title description &f]'
+    - '&f&l>> &a display title: &f> ${titleName}'
+    - ''
+    - '&f[ &c title description &f]'
+    - '&c&l>> &a${description}'
+    - ''
+    - '&f[ &c title buffs &f]'
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&f[ &c title particle &f]'
+    - '&c&l>> &a${particle}'
+    - ''
+    - '&f[ &c title price &f]'
+    - '&c&l>> &a purchase cost ${buyType} : ${price} / ${day}'
+    - ''
+    - '&f[ &c personal economy &f]'
+    - '&c&l>> &a currently has &e${buyType} : ${playerMoney}'
+    - ''
+    - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
+  myCoinNumber: "&a number of title coins"
+  # Variable: ${myCoin}Number of player title coins
+  myCoinLore:
+    - ''
+    - '&f[ &c${player} &f]'
+    - '&f&l>> &a Number of title coins: &f> &e${myCoin}'
+open:
+  # title
+  title: "&f[&e Title Warehouse&f]"
+  inUse: "&a in use"
+  notUse: "&4 not used"
+  useButton: "&f&l click to use"
+  noUseButton: "&a&l click to disable"
+  togglesCoolDownMsg: "&4 cooldown time is not up, please toggle after ${time} seconds"
+  # Serial number:${id} Title name:${titleName} Effect:${buff} Usage status:${useStatus} Player name:${player}
+  # Toggle Button:${useButton} Expiration Time:${expirationTime} Title Description: ${description}
+  lores:
+    - ''
+    - '&f[ &c title description &f]'
+    - '&f&l>> &a display title: &f> ${titleName}'
+    - '&f&l>> &a Expiration Time: &f> ${expirationTime}'
+    - ''
+    - '&f[ &c title description &f]'
+    - '&c&l>> &a${description}'
+    - ''
+    - '&f[ &c title buffs &f]'
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&f[ &c title particle &f]'
+    - '&c&l>> &a${particle}'
+    - ''
+    - '&f[ &c title status &f]'
+    - '&c&l>> ${useStatus}'
+    - ''
+    - '&6>>&4>>&5>> ${useButton} &6<<&4<<<&5<<'
+  notRanking: "&a no ranking yet"
+reward:
+  title: "&f[&e title quantity reward&f]"
+  titleRewardMsg: "&a Number of Required Titles: "
+  useButton: "&6>>&4>>&5>> &e collected &6<<&4<<&5<<"
+  useNotButton: "&a>>&4>>&5>> &a click to collect &a<<&4<<&5<<"
+  unableButton: "&a>>&4>>&5>> &f number insufficient &a<<&4<<&5<<"
+  # ${id} number ${myTitleNumber} number of titles ${number} number of requirements ${rewardType} award type ${amount} number of awards
+  titleRewardLore:
+    - ''
+    - '&f[ &c title reward description &f]'
+    - '&f&l>> &a demand quantity: &f> ${number}'
+    - ''
+    - '&f[ &c title bonus &f]'
+    - ''
+    - '&c&l>> &a${rewardType} : ${amount}'
+    - ''
+    - '&f[ &c Number of personal titles &f]'
+    - '&c&l>> &a currently owns &e${myTitleNumber}'
+    - ''
+
+setTitleBuff:
+  attributePlus: "&aap attribute"
+  sxAttribute: "&asx Attribute"
+  monsterTruce: "&a monster truce."
+  potionEffect: "&a potion effect"
+changeItem:
+  # No such title found
+  noTitleFailuerMsg: "&4The title was not found, please check the title id entered."
+  # The prefix of a generated title card can be changed, but it is forbidden to leave it blank, as it will render the previously generated title card unusable.
+  titleCard: "&a titleCard: "
+  # Serial number:${id} Title name:${titleName} Effect:${buff} Usage status:${useStatus} Toggle button:${useButton} Expiration time:${expirationTime}
+  titleCardLore:
+    - ''
+    - '&f[ &c title description &f]'
+    - '&f&l>> &a display title: &f> ${titleName}'
+    - '&f&l>> &a days of use: &f> ${expirationTime}'
+    - ''
+    - '&f[ &c title buffs &f]'
+    - ''
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&6>>&4>>&5>> &f&l click to get &6<<&4<<&5<<'
+  # Success with title cards
+  useTitleCardSucceedMsg: "&a success with title card"
+  # Failed to use title card
+  useTitleCardFailureMsg: "&4 useTitleCardFailure"
+  # No data found for the title id
+  noTitleFailureMsg: "&4 Unfortunately, the title has been removed."
+
+randomCard:
+  # The prefix of the generated card can be changed, but it is forbidden to be empty and the same as a regular card.
+  titleCard: "&a random title card"
+  # Titled Cardlore
+  titleCardLore:
+    - ''
+    - '&f[ &c title card description &f]'
+    - '&f&l>> &a function: &f> Get a random title'
+    - '&f&l>> &a days of use: &f> ${expirationTime}'
+    - ''
+    - '&6>>&4>>&5>> &f&l use get &6<<&4<<<&5<<'
+  # Success with title cards ${titleCard} title ${day} days
+  useTitleCardSucceedMsg: "&a success with random title card, got:${titleCard}: ${day}"
+  # Failed to use title card
+  useTitleCardFailureMsg: "&4 Use of random title card failed."
+  # No data found for the title id
+  noTitleMsg: "&4 Unfortunately, you randomly got air."
+  # No data found for the title id
+  noTitle: "&4 Unfortunately, there is no title corresponding to the type."
+
+view:
+  hide: "&4HidingIn"
+  show: "&a show in progress"
+  changHideMsg: "&a click to toggle show/hide"
+  # Type of change
+  changeTypeMsg: "&a change purchase type"
+  currentTypeMsg: "&a current type is: "
+  changeType: "&aPlease enter the type you want to change directly in the chat box (if you are changing an item type, you need to hold the item in your hand), optionally:"
+
+  # change item
+  changeItemMsg: "&a change purchase item"
+  changeItem: "&a ask the host to hold the item that needs to be added, just type: yes in the chat box."
+  confirmFailureMsg: "&a the command entered is not yes, the change program has exited"
+
+  # Change of name
+  changeNameMsg: "&a change name"
+  currentNameMsg: "&a current name is: "
+  changeName: "&aPlease enter the name of the title you want to change directly in the chat box, you can use the color code &"
+
+  # Change of hours
+  changeDayMsg: "&a change title days"
+  currentDayMsg: "&a current day is: "
+  changeDay: "&aPlease enter the number of days you want to change directly in the chat box, 0 is permanent"
+
+  # Change amount/item
+  changeAmountMsg: "&a change title price/quantity"
+  currentAmountMsg: "&a current price/quantity for: "
+
+  # Manage buffs
+  buffMsg: "&a title buff management"
+  buffLores:
+    - '&f[ &c title buff &f]'
+    - ''
+    - '&c&l>> &a${buff}'
+  # Serial number:${id} Title name:${titleName} Effect:${buff} Display status:${status} Player name:${player}
+  # Buy Type:${buyType} Price:${price} Number of days to buy:${day} Description of title: ${description}
+  shopLores:
+    - ''
+    - '&f[ &c title description &f]'
+    - '&f&l>> &a title number: &f> ${id}'
+    - '&f&l>> &a display title: &f> ${titleName}'
+    - '&f&l>> &a display status: &f> ${status}'
+    - ''
+    - '&f[ &c title description &f]'
+    - '&c&l>> &a${description}'
+    - ''
+    - '&f[ &c title buffs &f]'
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&f[ &c title particle &f]'
+    - '&c&l>> &a${particle}'
+    - ''
+    - '&f[ &c title price &f]'
+    - '&c&l>> &a purchase cost ${buyType} : ${price} / ${day}'
+    - ''
+  # Serial Number:${id} Title Name:${titleName} Effect:${buff} Purchase Type:${buyType} Player name:${player}
+  # Price:${price} Player Balance:${playerMoney} Days to Buy:${day} Buy Button:${buyButton} Title Description: ${description}
+  openLores:
+    - ''
+    - '&f[ &c title description &f]'
+    - '&f&l>> &a title number: &f> ${id}'
+    - '&f&l>> &a display title: &f> ${titleName}'
+    - ''
+    - '&f[ &c title description &f]'
+    - '&c&l>> &a${description}'
+    - ''
+    - '&f[ &c title buffs &f]'
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&f[ &c title particle &f]'
+    - '&c&l>> &a${particle}'
+    - ''
+  # ${id} number ${myTitleNumber} number of titles ${number} number of requirements ${rewardType} award type ${amount} number of awards
+  rewardLore:
+    - ''
+    - '&f[ &c title reward description &f]'
+    - '&f&l>> &a award number: &f> &e${id}'
+    - '&f&l>> &a demand quantity: &f> ${number}'
+    - ''
+    - '&f[ &c title bonus &f]'
+    - ''
+    - '&c&l>> &a${rewardType} : ${amount}'
+    - ''
+
+# Use tab to automatically remind help when typing commands (translation only, no changes recommended)
+tabHelp:
+  titleId: "Please enter the title id,you can use /plt adminShop to view"
+  buffId: "Please input buffId,you can use /plt adminShop to view"
+  titleName: "Please enter a title, color code &"
+  titleDescription: "Please enter a description of the title, it can be color coded &"
+  coinAmount: "Please enter the amount, it must be a positive integer."
+  titleAmount: "Please enter the title price/number of items, it must be a positive integer."
+  setTitleDay: "Please enter the number of days given, which must be a positive integer."
+  buff: "Please enter a property label, use # to denote a space, e.g. Physical Damage:#100"
+  addTitleDay: "Please enter a positive integer (0, permanent) for the time the title was sold."
+  changeItemNum: "Please enter the quantity of the item, it must be a positive integer."
+  titleNumber: "Please enter the number of titles, it must be a positive integer."
+  titleNumberAmount: "Please enter the reward price/number of items, it must be a positive integer."
+  titlePermission: "Please enter the required title permissions"
+  potionEffectLevel: "Please enter the potion level."
+  potionEffectHide: "Whether to hide particles"
+  setCustomNum: "Please enter the number of times to give, must be a positive integer"
+  ordinaryColor: "Please enter the RGB color code, e.g. 66,120,150"
+
+listTitle:
+  # The head line of the list of all the titles
+  titleList: "&e&m一一一一一一一&f[&eAll Title List§f]&e&m一一一一一一一"
+  # No player data
+  noTitleFailureMsg: "&aThere are no title in the server"
+  # Wrong number
+  titleIdFailureMsg: "&4The page must be number"
+  id: "&aNumber: "
+  titleName: "&aTitle name: "
+  buyType: "&aBuying type: "
+  amount: "&aPrice: "
+  number: "&aAmount: "
+
+# Potion effect Chineseization
+buffMsg:
+  speed: "speed"
+  slow: "slow"
+  fast_digging: "Urgent"
+  slow_digging: "digging fatigue"
+  increase_damage: "power"
+  heal: "instant healing"
+  harm: "instantaneous damage"
+  jump: "jump boost"
+  confusion: "nausea."
+  regeneration: "life restoration"
+  damage_resistance: "resistance boost"
+  fire_resistance: "fireproof"
+  water_breathing: "underwater breathing"
+  invisibility: "invisibility"
+  blindness: "blindness"
+  night_vision: "night vision"
+  hunger: "hunger"
+  weakness: "weakness"
+  poison: "poisoning"
+  wither: "wither"
+  health_boost: "Life Boost"
+  absorption: "injury absorption"
+  saturation: "saturation"
+  glowing: "glowing"
+  levitation: "floating"
+  luck: "lucky"
+  unluck: "bad luck"
+  slow_falling: "slowing down"
+  conduit_power: "tidal surge energy"
+  dolphins_grace: "Grace of the Dolphins"
+  bad_omen: "bad omen"
+  hero_of_the_village: "village hero"
+
+# Particle effect Chineseization
+superTrails:
+  heart: "Particle Effects:Heart"
+  angry: "Particle Effect: Heartbreak"
+  magic: "Particle Effect: Smoke"
+  fun: "Particle effects:fun"
+  colors: "Particle Effects: colors"
+  clouds: "Particle Effects:Clouds"
+  witch: "Particle Effect:Witch"
+  ender: "Particle Effects:Ender"
+  green: "Particle Effects: green"
+  spark: "Particle Effects:Spark"
+  flame: "Particle Effect: Flame"
+  white: "Particle Effect: White Smoke"
+  note: "Particle effects: musical notes"
+  snow: "Particle Effect: Snowflake"
+  water: "Particle Effect: Water Drops"
+  lava: "Particle Effects: Magma"
+  crit: "Particle Effect: Blast"
+  smoke: "Particle Effect: Smoke"
+  spell: "Particle Effects:Spell"
+  enchant: "Particle effects:enchanting"
+  splash: "Particle Effects:Splash"
+  slime: "Particle Effects:Slime"
+  snowballs: "Particle Effects:Snowballs"
+  spell_23: "Particle Effects:Spellbound 2"
+  void: "Particle Effect:Void"
+  lava_pop: "Particle Effects:Black Heart"
+  rainbow_wings_1_9: "particle_effects:white_spots"
+  dragon_breath_1_9: "Particle Effect: Dragon's Breath"
+  endrod_1_9: "Particle Effect: End Shadow Candle"
+  damage_1_9: "Particle Effect:Damage"
+  sand_1_10: "Particle Effects:Sand"
+  totem_1_11: "Particle Effects:Totem"
+  wings_angel: "wing_effects:angel"
+  wings_butterfly: "wing_effect:butterfly"
+  wings: "wing effects:wings"
+  rbuilder: "builder"
+  blocks: "Cube effects: multiple cubes"
+  glass_b: "Cube Effect: Colored Wool"
+  flower_b: "Cube Effect: Stained Glass"
+  carpet_b: "Cube Effect: The Next Ore"
+  redstn_b: "cube effect: colored clay"
+  sea_b: "Cube FX: Multiple Ores"
+  wheat_b: "Cube Effects:Redstone Cube"
+  ore_b: "Cube Effect: Multiple Stones"
+  clay_b: "Cube Effects:Multiple Minerals"
+  tear_r: "Scattered Class Effect: Tears of the Evil Dead"
+  blood_r: "Scattered Class Effects:Redstone"
+  dia_r: "Scattered Class Effects: Diamonds"
+  wart_r: "Scattered Class Effects:Hell's Warts"
+  gold_r: "Scattered Class Effects:Gold Grains"
+  confetti: "trail effects: trails"
+  colorSpin: "Rotation Effects:Color"
+  fairy: "fairy effects: color"
+
+# playerParticles particle effects Chinese
+playerParticles:
+  arrows: "particle effect triggered after shooting an arrow"
+  batman: "a bat appears on the head (it starts with a bat .....)"
+  beam: "16 lines of particle effects appear all around"
+  block_break: "particle effect after destroying a block"
+  block_place: "particle effect after placing a block"
+  celebration: "the fireworks effect appears around, actually it is the effect of fireworks + particle effects"
+  chains: "[chain] 4 dots appear around the bottom of the foot"
+  companion: "particle effect will circle around the player, from head to foot; from foot to head"
+  cube: "a square surrounds you, the square will rotate"
+  death: "death"
+  feet: "particle effect appears on the bottom of the feet"
+  fishing: "fishery"
+  halo: "main character aura (the perfect description)"
+  hurt: "particle effect will be displayed after being taken advantage of by cactus [thorn]"
+  ico_sphere: "ico sphere"
+  invocation: "a large halo appears under the feet [sacred], the halo is like an altar"
+  move: "particle effect will be displayed only after moving; displayed under the feet"
+  normal: "particle effects appear all around default style"
+  orbit: "particle effects will hover around"
+  outline: "outline"
+  overhead: "particle effects appear on your head without any pattern"
+  point: "a dot appears on your head"
+  popper: "particle effect from half of your body to your head, like an ice cream"
+  pulse: "1 circle slowly expands under your feet"
+  quad_helix: "a non-collapsing, non-standing ice cream around you, from your head to your feet; from your feet to your head"
+  rings: "two circles perpendicular to each other around you, if you look at the back like an x"
+  sphere: "a circular body enveloping you"
+  spin: "a curve on your head that keeps turning in circles"
+  spiral: "a curve in your half-body waist circles"
+  swords: "when you hammer someone with a sword [in combat], particle effects will show up"
+  teleport: "mind transport"
+  thick: "particle effects that move around you and penetrate your body"
+  trail: "footprint"
+  twins: "two curves that go all the way around you, not to your head and not to your feet"
+  vortex: "a cylinder formed by particle effects wraps around you"
+  whirl: "a spiral of particles appearing on the bottom of your feet"
+  whirlwind: "a whirlwind on the bottom of your feet, the whirlwind will form a circle"
+  wings: "wings appear on your back"
+
+# playerParticles Particle Type Handmade
+playerParticlesEffects:
+  ambient_entity_effect: "Beacon effect"
+  angry_villager: "Villager anger effect"
+  ash: "Particle effect for soul_sand_canyon"
+  barrier: "Particle effect for barrier"
+  block: "Block destroyed effect"
+  bubble: "Bubbles in water effect"
+  bubble_column_up: "The bubble column effect generated by Soul Sand's surge"
+  bubble_pop: "Particles at the top of the bubble column"
+  campfire_cosy_smoke: "The smoke effect of the campfire"
+  campfire_signal_smoke: "Smoke effect from a campfire placed on a hay block"
+  cloud: "Smoke particles generated when an entity dies"
+  composter: "Particles generated when a compost bin is filled"
+  crimson_spore: "Particles that drift through the Crimson Forest system"
+  crit: "Particles generated by blasts"
+  current_down: "Vortex bubble columns generated by lava blocks"
+  damage_indicator: "Particles generated when creature is attacked in melee"
+  dolphin: "Splash particles generated by dolphins"
+  dragon_breath: "Dragon breath particles"
+  dripping_dripstone_lava: "Lava particles oozing from the dripstone cone"
+  dripping_dripstone_water: "Water particles oozing from the dripstone cone"
+  dripping_honey: "oozing honey particles"
+  dripping_lava: "oozing lava particles"
+  dripping_obsidian_tear: "oozing particles of weeping obsidian"
+  dripping_water: "particles of water oozing through the cube"
+  dust: "particles produced by redstone (but black)"
+  dust_color_transition: "Particles generated by an activated Sculk Sensor"
+  elder_guardian: "Ancient Guardian"
+  electric_spark: "Particles generated when lightning strikes a copper block"
+  enchant: "Symbolic text of the enchanted table"
+  enchanted_hit: "Particles that appear when a creature is attacked by a sword or axe with a sharp, undead slayer or arthropod slayer attached"
+  end_rod: "Particles generated by Mordecai candles"
+  entity_effect: "Particles from creatures with status effects"
+  explosion: "Particles that appear when an explosion occurs"
+  explosion_emitter: "Particles that appear when exploding (more and bigger!)"
+  falling_dripstone_lava: "Lava particles dripping from a dripstone cone"
+  falling_dripstone_water: "particles of water dripping from the dripstone cone"
+  falling_dust: "Falling dust particles"
+  falling_honey: "Dripping honey particles"
+  falling_lava: "dripping lava particles"
+  falling_nectar: "Particles of pollen dropped by bees"
+  falling_obsidian_tear: "particles of weeping obsidian drops"
+  falling_spore_blossom: "Spore particles dropped by spore flowers"
+  falling_water: "particles of dripping water"
+  firework: "Trailing particles of a firework rocket"
+  fishing: "Fishing particles that appear when fishing"
+  flame: "particles of fire"
+  flash: "The flashing effect when fireworks explode"
+  glow: "Glow particles from the glowing squid"
+  glow_squid_ink: "Glowing ink squirted by the glowing squid when attacked"
+  footstep: "footsteps"
+  happy_villager: "Particles that appear when using bone dust and trading with villagers"
+  heart: "Love particles"
+  instant_effect: "particles that appear when splash potions and stagnant potions break"
+  item: "Fragments generated when the player eats, items are damaged, etc."
+  item_slime: "Particles generated by slimes landing"
+  item_snowball: "Particles generated when a snowball is thrown"
+  landing_honey: "Honey particles from landing"
+  landing_lava: "Lava particles that land"
+  landing_obsidian_tear: "Landed particles oozing from the weeping obsidian"
+  large_smoke: "Large smoke particles"
+  lava: "Spark particles from lava"
+  light: "Light!"
+  mycelium: "spore particles produced by mycelium"
+  nautilus: "Particles produced by an activated tidal surge core"
+  note: "note particle"
+  poof: "particles of smoke when a creature dies"
+  portal: "Particles generated by a portal (in motion)"
+  rain: "Raindrop particles"
+  reverse_portal: "Particles generated by a portal (stationary)"
+  scrape: "Particles generated when removing patina from a copper block with an axe"
+  small_flame: "Small flame"
+  smoke: "Smoke particles"
+  sneeze: "Particles from a juvenile panda sneezing"
+  snowflake: "Snowflake"
+  soul: "soul particles"
+  soul_fire_flame: "The fire particles generated by the soul torch"
+  spell: "Potion particles"
+  spit: "Particle generated when alpaca spits a creature"
+  splash: "Water splash particles"
+  spore_blossom_air: "Spore particles dispersed around a spore blossom"
+  squid_ink: "ink particles from squid"
+  sweep_attack: "Sword's sweeping animation"
+  totem_of_undying: "particles when activating the undying totem"
+  underwater: "underwater floating particles"
+  vibration: "Vibrating particles transmitted to the Sculk Sensor"
+  warped_spore: "Particles drifting in the Spooky Forest system"
+  wax_off: "particles that appear when waxing a copper block with an axe"
+  wax_on: "Particles that appear when waxing a copper block with a honey spleen"
+  white_ash: "Particles dispersed in the basalt delta system"
+  witch: "Particles produced by a witch"

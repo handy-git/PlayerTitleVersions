@@ -1,0 +1,143 @@
+# 材质,用来自定义称号的材质和模型
+# 配置格式:  称号id: 物品材质
+# 例如:  1: MAP  就是称号id 1 的称号(称号id使用/plt adminShop或者/plt listTitle 查看), 在商城和仓库里显示的材质
+# 例如:  1_custom-model-data: 16 就是称号id 1 的称号(称号id使用/plt adminShop或者/plt listTitle 查看), 在商城和仓库里显示的自定义模型材质1.14+生效
+# 如果没有配置,默认所有称号为 命名牌NAME_TAG ,玩家使用中的为书BOOK ,
+# 友情提醒: 虽然可以,但是我不建议你设置的跟默认的一样,因为那样还不如不配置..
+# 1: PAPER
+# 1_custom-model-data: 7
+
+# 这里是系统gui的材质配置
+shop:
+  # 全部
+  all:
+    # 是否使用
+    isUse: true
+    # 在gui中的坐标（位置只能45，46，47，51，52，53选择,并且同gui中不能重复,修改后需要重启服务器生效）
+    index: 45
+    # 在gui中的材质名称
+    material: MAP
+    # 在gui中的名称
+    name: "&a所有"
+    # 在gui中的lore(换行用 , 分割，注意是英文逗号,请复制)
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索全部称号"
+    # 自定义模型材质 1.14+生效 0为不生效
+    custom-model-data: 1
+  # 金币
+  vault:
+    isUse: true
+    index: 46
+    material: GOLD_INGOT
+    name: "&a金币"
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索购买条件为金币类型的称号"
+    custom-model-data: 2
+  # 点券
+  playerPoints:
+    isUse: true
+    index: 47
+    material: DIAMOND
+    name: "&a点券"
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索购买条件为点券类型的称号"
+    custom-model-data: 3
+  # 称号币
+  coin:
+    isUse: true
+    index: 51
+    material: EMERALD
+    name: "&a称号币"
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索购买条件为称号币类型的称号"
+    custom-model-data: 4
+  # 物品
+  itemStack:
+    isUse: true
+    index: 52
+    material: CHEST
+    name: "&a物品"
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索购买条件为物品类型的称号"
+    custom-model-data: 1
+  # 无
+  not:
+    isUse: true
+    index: 53
+    material: STICK
+    name: "&a无"
+    lore:
+      - "&a点击这个按钮"
+      - "&a搜索购买条件没有条件就可以获取的称号"
+    custom-model-data: 6
+  # 下一页
+  nextPage:
+    # 材质
+    material: PAPER
+    # 自定义模型材质 1.14+生效 0为不生效
+    custom-model-data: 1
+  # 上一页
+  previousPage:
+    # 材质
+    material: PAPER
+    custom-model-data: 2
+  # 我的称号币
+  myCoin:
+    # 材质
+    material: NETHER_STAR
+    custom-model-data: 2
+
+# 随机称号卡自定义模型
+randomCard:
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 8
+
+# 返回按钮设置
+back:
+  material: ENDER_PEARL
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 10
+
+# 仓库配置
+open:
+  # 称号数量
+  myTitleNumber:
+    isUse: true
+    # 在gui中的坐标（位置只能45，46，47，51，52，53选择,并且同gui中不能重复,修改后需要重启服务器生效）
+    index: 47
+    material: NETHER_STAR
+    name: "&a称号数量"
+    # 变量: ${myTitleNumber}玩家称号数量
+    lore:
+      - ''
+      - '&f[ &c${player} &f]'
+      - '&f&l>> &a称号数量：&f> &e${myTitleNumber}'
+    custom-model-data: 1
+  # 称号数量奖励
+  reward:
+    isUse: true
+    index: 49
+    material: NAME_TAG
+    name: "&a称号数量奖励"
+    lore:
+      - ''
+      - '&f&l>> &a查看称号数量奖励'
+    custom-model-data: 11
+  # 称号数量排行
+  titleNumberRanking:
+    isUse: true
+    index: 51
+    material: LADDER
+    name: "&a称号数量排行"
+    # 变量: ${titleNumberRanking}称号数量排行榜,只展示前10
+    lore:
+      - ''
+      - '&f[ &c排行榜 &f]'
+      - ''
+      - '&c&l>> &a${titleNumberRanking}'
+    custom-model-data: 1
