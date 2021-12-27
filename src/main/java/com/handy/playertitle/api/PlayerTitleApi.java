@@ -201,4 +201,22 @@ public class PlayerTitleApi {
         return 0;
     }
 
+    /**
+     * 移除buff
+     *
+     * @param player 玩家
+     * @since 2.9.9
+     */
+    public void removeBuff(Player player) {
+    }
+
+    /**
+     * 设置buff
+     *
+     * @param player 玩家
+     * @since 2.9.9
+     */
+    public void setBuff(Player player) {
+    }
+
 }

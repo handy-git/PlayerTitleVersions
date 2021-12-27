@@ -85,6 +85,7 @@ public class PlayerTitleBuffEvent extends Event {
     /**
      * 获取自己插件类型的buff
      *
+     * @param pluginName 插件名称
      * @return 类型
      */
     public List<TitleBuff> getMyPluginBuffType(String pluginName) {
