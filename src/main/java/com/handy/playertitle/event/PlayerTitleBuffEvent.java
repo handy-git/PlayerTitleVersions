@@ -28,10 +28,21 @@ public class PlayerTitleBuffEvent extends Event {
         return HANDLERS;
     }
 
+    /**
+     * HANDLERS
+     *
+     * @return HANDLERS
+     */
     public static HandlerList getHandlerList() {
         return HANDLERS;
     }
 
+    /**
+     * 称号buff事件
+     *
+     * @param player        玩家
+     * @param titleBuffList buff集合
+     */
     public PlayerTitleBuffEvent(Player player, List<TitleBuff> titleBuffList) {
         this.player = player;
         this.isAllBuff = false;
@@ -39,6 +50,12 @@ public class PlayerTitleBuffEvent extends Event {
         this.titleBuffMap = new HashMap<>();
     }
 
+    /**
+     * 称号buff事件
+     *
+     * @param player  玩家
+     * @param titleId 称号id
+     */
     public PlayerTitleBuffEvent(Player player, Long titleId) {
         this.player = player;
         this.isAllBuff = false;

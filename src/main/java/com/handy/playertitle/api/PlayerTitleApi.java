@@ -23,6 +23,11 @@ public class PlayerTitleApi {
         private static final PlayerTitleApi INSTANCE = new PlayerTitleApi();
     }
 
+    /**
+     * 获取api实例
+     *
+     * @return PlayerTitleApi
+     */
     public static PlayerTitleApi getInstance() {
         return PlayerTitleApi.SingletonHolder.INSTANCE;
     }

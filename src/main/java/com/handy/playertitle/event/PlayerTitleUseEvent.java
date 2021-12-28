@@ -20,10 +20,21 @@ public class PlayerTitleUseEvent extends Event {
         return HANDLERS;
     }
 
+    /**
+     * HANDLERS
+     *
+     * @return HANDLERS
+     */
     public static HandlerList getHandlerList() {
         return HANDLERS;
     }
 
+    /**
+     * 称号使用事件
+     *
+     * @param player 玩家
+     * @param id     称号id
+     */
     public PlayerTitleUseEvent(Player player, Long id) {
         this.player = player;
         this.id = id;
