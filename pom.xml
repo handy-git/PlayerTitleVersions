@@ -7,7 +7,7 @@
     <groupId>com.handy.playertitle</groupId>
     <artifactId>PlayerTitle</artifactId>
     <name>PlayerTitle</name>
-    <version>2.9.9</version>
+    <version>2.10.0</version>
     <description>PlayerTitleApi!</description>
 
     <properties>
