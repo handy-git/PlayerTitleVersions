@@ -73,6 +73,17 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 删除称号
+     *
+     * @param titleId 称号id
+     * @return true/成功
+     * @since 2.10.1
+     */
+    public boolean removeTitle(Long titleId) {
+        return true;
+    }
+
+    /**
      * 添加称号buff
      *
      * @param titleId    称号id
