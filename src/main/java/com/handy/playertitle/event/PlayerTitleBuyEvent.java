@@ -22,10 +22,21 @@ public class PlayerTitleBuyEvent extends Event {
         return HANDLERS;
     }
 
+    /**
+     * HANDLERS
+     *
+     * @return HANDLERS
+     */
     public static HandlerList getHandlerList() {
         return HANDLERS;
     }
 
+    /**
+     * 称号购买事件
+     *
+     * @param player 玩家
+     * @param title  称号
+     */
     public PlayerTitleBuyEvent(Player player, TitleList title) {
         this.player = player;
         this.title = title;

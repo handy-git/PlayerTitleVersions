@@ -1,5 +1,6 @@
 package com.handy.playertitle.api.param;
 
+import com.handy.playertitle.constants.BuyTypeEnum;
 import lombok.Data;
 
 import java.util.List;
@@ -20,8 +21,18 @@ public class TitleListParam {
 
     /**
      * 购买类型
+     * PlayerTitle内置购买类型查看BuyTypeEnum
      */
     private String buyType;
+
+    /**
+     * 购买类型 兼容低版本api保留
+     * 请使用 buyType参数
+     *
+     * @since 2.10.0
+     */
+    @Deprecated
+    private BuyTypeEnum buyTypeEnum;
 
     /**
      * 金额
