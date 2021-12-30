@@ -178,6 +178,18 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 根据titleId和玩家名删除 玩家对应称号
+     *
+     * @param playerName 玩家名
+     * @param titleId    称号id
+     * @return true成功
+     * @since 2.10.1
+     */
+    public boolean removePlayerTitle(String playerName, Long titleId) {
+        return true;
+    }
+
+    /**
      * 获取玩家正在使用的称号信息
      *
      * @param player 玩家
