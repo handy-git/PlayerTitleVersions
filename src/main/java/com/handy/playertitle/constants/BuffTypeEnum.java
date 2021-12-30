@@ -34,6 +34,19 @@ public enum BuffTypeEnum {
     PLAYER_INTENSIFY("player_intensify"),
     ;
 
+    /**
+     * buff类型
+     */
     private final String buffType;
+
+    /**
+     * 根据buff类型获取枚举
+     *
+     * @param buffType buff类型
+     * @return 枚举
+     */
+    public static BuffTypeEnum getEnum(String buffType) {
+        return null;
+    }
 
 }
