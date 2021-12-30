@@ -150,6 +150,18 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 给玩家称号
+     *
+     * @param playerName 玩家名
+     * @param titleId    称号编码
+     * @return true/成功
+     * @since 1.10.1
+     */
+    public boolean set(String playerName, Long titleId) {
+        return true;
+    }
+
+    /**
      * 获取玩家正在使用的称号信息
      *
      * @param player 玩家
