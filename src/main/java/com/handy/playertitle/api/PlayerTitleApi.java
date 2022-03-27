@@ -6,6 +6,7 @@ import com.handy.playertitle.api.param.TitleParticleParam;
 import com.handy.playertitle.entity.TitlePlayer;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -257,6 +258,50 @@ public class PlayerTitleApi {
      * @since 2.9.9
      */
     public void setBuff(Player player) {
+    }
+
+    /**
+     * 添加buff
+     *
+     * @param player  玩家
+     * @param titleId 称号id
+     * @since 2.11.0
+     */
+    public void addBuff(Player player, Long titleId) {
+    }
+
+    /**
+     * 根据称号id查询称号名称
+     *
+     * @param titleId 称号唯一编号id
+     * @return 称号名称
+     * @since 2.11.0
+     */
+    public String findNameByTitleId(Long titleId) {
+        return null;
+    }
+
+    /**
+     * 根据playerName查询玩家称号列表分页
+     *
+     * @param playerName 玩家名
+     * @param pageNum    页数
+     * @return 玩家称号列表
+     * @since 2.11.0
+     */
+    public List<TitlePlayer> findPlayerTitleByPlayerName(String playerName, Integer pageNum) {
+        return new ArrayList<>();
+    }
+
+    /**
+     * 根据playerName查询玩家称号总数
+     *
+     * @param playerName 玩家名
+     * @return 玩家称号总数
+     * @since 2.11.0
+     */
+    public Integer findPlayerTitleCountByPlayerName(String playerName) {
+        return 0;
     }
 
 }
