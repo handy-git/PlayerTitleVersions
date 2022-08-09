@@ -1,0 +1,87 @@
+# gui標題
+title: "&0自定義稱號"
+
+# 點券
+point:
+  # 是否使用
+  enable: true
+  # 在gui中的坐標
+  index: 11
+  # 在gui中的材質名稱
+  material: DIAMOND
+  # 是否附魔效果
+  isEnchant: false
+  # 在gui中的名稱
+  name: "   &8[&5ℑ&8] ▪ &8[&d點券購買&8]"
+  # 自定義模型材質 1.14+生效 0為不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7購買自定義稱號所需費用'
+    - '&8▪ &7購買可在聊天框輸入你要自定義的稱號'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7點券'
+    - '&8▪ &7你擁有 &a${money} &7點券'
+    - ''
+    - '${button}'
+  # 價格
+  price: 5000
+
+# 稱號幣
+coin:
+  enable: true
+  index: 13
+  material: bread
+  name: "   &8[&6ℑ&8] ▪ &8[&e稱號幣購買&8]"
+  custom-model-data: 0
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ &7購買自定義稱號所需費用'
+    - '&8▪ &7購買可在聊天框輸入你要自定義的稱號'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7稱號幣'
+    - '&8▪ &7你擁有 &a${money} &7稱號幣'
+    - ''
+    - '${button}'
+  price: 10000
+
+# 金幣
+vault:
+  enable: true
+  index: 15
+  material: GOLD_INGOT
+  isEnchant: false
+  name: "   &8[&6ℑ&8] ▪ &8[&e金幣購買&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7購買自定義稱號所需費用'
+    - '&8▪ &7購買可在聊天框輸入你要自定義的稱號'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7金幣'
+    - '&8▪ &7你擁有 &a${money} &7金幣'
+    - ''
+    - '${button}'
+  price: 666666
+
+# ${button}對應的變量
+yesButton: " &8[&a✔&8] &7點擊進行支付"
+noButton: " &8[&c✘&8] &7你的餘額不足"
+
+# 返回按鈕
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7點擊返回'
+  custom-model-data: 0
+
+# 創建提醒語言文件
+notMoneyFailureMsg: "&c你的餘額不足 無法進行購買"
+customMsg: "&8[&a✔&8] &7請在聊天框輸入&a稱號名稱，&7輸入 &aT &7退出操作(不返還扣除資金)"
+cancelMsh: "&8[&a✔&8] &7操作已取消"

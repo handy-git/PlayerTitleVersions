@@ -1,0 +1,13 @@
+# 材质,用来自定义称号的材质和模型
+# 配置格式:  称号id: 物品材质
+# 例如:  1: MAP  就是称号id 1 的称号(称号id使用/plt adminShop或者/plt listTitle 查看), 在商城和仓库里显示的材质
+# 例如:  1_custom-model-data: 16 就是称号id 1 的称号(称号id使用/plt adminShop或者/plt listTitle 查看), 在商城和仓库里显示的自定义模型材质1.14+生效
+# 如果没有配置,默认所有称号为 命名牌NAME_TAG ,玩家使用中的为书BOOK ,
+# 友情提醒: 虽然可以,但是我不建议你设置的跟默认的一样,因为那样还不如不配置..
+# 1: PAPER
+# 1_custom-model-data: 7
+
+# 随机称号卡自定义模型
+randomCard:
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0

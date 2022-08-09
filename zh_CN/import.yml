@@ -1,0 +1,35 @@
+example:
+  # 是否已导入,导入过的会变为true
+  enable: false
+  # 称号名称
+  titleName: "&e小富豪"
+  # 称号类型 not(免费) vault(金币) playerPoints(点券) coin(称号币) itemStack(物品) permission(权限) activity(活动)
+  buyType: "vault"
+  # 称号价格/称号数量
+  amount: 10000
+  # 称号出售天数 0为永久
+  day: 0
+  # buyType为itemStack(物品) 填需要的物品材质 例如 APPLE permission(权限)时候填需要的权限,例如 abc
+  itemStack: ""
+  # 是否在商城隐藏- true隐藏
+  isHide: false
+  # 称号描述
+  description:
+    - "&e这是一个示例称号"
+    - "&f使用指令/plt title import即可导入"
+  # 称号buff类型 attribute_plus 或 sx_attribute
+  buffType: "sx_attribute"
+  # 称号具体buff
+  buff:
+    - '&e物理伤害: 1'
+example2:
+  enable: false
+  titleName: "&e大富豪"
+  buyType: "vault"
+  amount: 100000
+  day: 10
+  itemStack: ""
+  isHide: false
+  description:
+    - "&e这是第二个个示例称号"
+    - "&f使用指令/plt title import即可导入"

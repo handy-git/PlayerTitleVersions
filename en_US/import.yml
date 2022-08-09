@@ -1,0 +1,35 @@
+example:
+  # Whether it has been imported, the imported one will become true
+  enable: false
+  # title name
+  titleName: "&e little rich"
+  # title type not(free) vault(money) playerPoints(points) coin(title coin) itemStack(itme) permission activity(event)
+  buyType: "vault"
+  # Title Price / Title Quantity
+  amount: 10000
+  # Title sale days, 0 is permanent
+  day: 0
+  # buyType for itemStack(item) fill in the required material. e.g. APPLE permission fill in the required permissions,example: abc
+  itemStack: ""
+  # Whether to hide in the mall - true for hide
+  isHide: false
+  # title description
+  description:
+    - "&ethis is a example description "
+    - "&fusing command: /plt title import  can import the title"
+  # buff type of the title: attribute_plus or sx_attribute
+  buffType: "sx_attribute"
+  # the buff of the title 
+  buff:
+    - '&e physical damage: 1'
+example2:
+  enable: false
+  titleName: "&e rich man"
+  buyType: "vault"
+  amount: 100000
+  day: 10
+  itemStack: ""
+  isHide: false
+  description:
+    - "&ethis is the second example title"
+    - "&fusing command: /plt title import  can import the title"

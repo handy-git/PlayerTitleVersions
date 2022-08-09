@@ -1,0 +1,87 @@
+# gui title
+title: "&0custom title"
+
+# point
+point:
+  # enable or not
+  enable: true
+  # coordinates in the gui
+  index: 11
+  # material name in gui
+  material: DIAMOND
+  # Whether enchanted
+  isEnchant: false
+  # name in gui
+  name: "   &8[&5ℑ&8] ▪ &8[&d point purchase&8]"
+  # Custom model material 1.14+ effective, 0 is not effective
+  custom-model-data: 0
+  # lore in gui
+  lore:
+    - ''
+    - '&8▪ &7The cost of purchasing a custom title'
+    - '&8▪ &7Purchases can enter the title you want to customize in the chat box'
+    - ''
+    - '&8▪ &7to be paid &a${price} &point'
+    - '&8▪ &7you have &a${money} &point'
+    - ''
+    - '${button}'
+  # price
+  price: 5000
+
+# coin
+coin:
+  enable: true
+  index: 13
+  material: bread
+  name: "   &8[&6ℑ&8] ▪ &8[&etitle coin purchase&8]"
+  custom-model-data: 0
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ &7The cost of purchasing a custom title'
+    - '&8▪ &7Purchases can enter the title you want to customize in the chat box'
+    - ''
+    - '&8▪ &7to be paid &a${price} &7title coins'
+    - '&8▪ &7you have &a${money} &7title coins'
+    - ''
+    - '${button}'
+  price: 10000
+
+# money
+vault:
+  enable: true
+  index: 15
+  material: GOLD_INGOT
+  isEnchant: false
+  name: "   &8[&6ℑ&8] ▪ &8[&emoney purchase&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7The cost of purchasing a custom title'
+    - '&8▪ &7Purchases can enter the title you want to customize in the chat box'
+    - ''
+    - '&8▪ &7to be paid &a${price} &7money'
+    - '&8▪ &7you have &a${money} &7money'
+    - ''
+    - '${button}'
+  price: 666666
+
+# ${button}corresponding variable
+yesButton: " &8[&a✔&8] &7Click to pay"
+noButton: " &8[&c✘&8] &7Your balance is insufficient"
+
+# back button
+back:
+  enable: true
+  index: 22
+  name: "   &8[&areturn&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7Click to return'
+  custom-model-data: 0
+
+# Create a reminder language file
+notMoneyFailureMsg: "&cYou do not have enough balance to make a purchase"
+customMsg: "&8[&a✔&8] &7Please enter &aTitle name in the chat box, &7input &aT &7Exit the operation (does not return deducted funds)"
+cancelMsh: "&8[&a✔&8] &7 operation cancelled"

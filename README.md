@@ -4,7 +4,7 @@
 
 ##### [MCBBS发布地址](https://www.mcbbs.net/thread-1004671-1-1.html)
 
-##### [文档地址](https://handy-git.gitee.io/rice-doc/#/PlayerTitle/zh_CN/)
+##### [文档地址](https://handy-git.gitee.io/rice-doc/#/PlayerTitle3/zh_CN/)
 
 #### API使用教程
 
