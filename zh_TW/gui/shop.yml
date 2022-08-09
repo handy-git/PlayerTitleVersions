@@ -68,6 +68,7 @@ open:
   material: CHEST
   isEnchant: false
   custom-model-data: 0
+  
 # 自定義稱號
 titleCustom:
   enable: true

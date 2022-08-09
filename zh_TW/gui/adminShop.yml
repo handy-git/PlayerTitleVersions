@@ -59,6 +59,7 @@ buyType:
     - ''
     - ' &8[&a✔&8] &7點擊更改'
   custom-model-data: 0
+  
 # 變更物品
 item:
   enable: true

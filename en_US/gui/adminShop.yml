@@ -59,6 +59,7 @@ buyType:
     - ''
     - ' &8[&a✔&8] &7 Click to change'
   custom-model-data: 0
+
 # change item
 item:
   enable: true

@@ -35,6 +35,7 @@ shop:
 
 hide: "&4隱藏中"
 show: "&a顯示中"
+
 # 搜索
 search:
   enable: true
