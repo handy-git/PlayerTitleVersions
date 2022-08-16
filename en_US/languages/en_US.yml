@@ -27,6 +27,10 @@ attributePlusFailureMsg: "&4AttributePlus not found, attribute tag related funct
 sxAttributeSucceedMsg: "&aSuccessfully loaded SXAttribute, enable attribute tag related functions!"
 sxAttributeFailureMsg: "&4SXAttribute not found, attribute tag related functions are not enabled!"
 
+# AttributeSystem Reminder
+attributeSystemSucceedMsg: "&aSuccessfully loaded AttributeSystem, enable attribute tag related functions!"
+attributeSystemFailureMsg: "&4AttributeSystem not found, attribute tag related functions are not enabled!"
+
 #superTrails Reminder
 superTrailsSucceedMsg: "&aSuccessfully loaded SuperTrails, enabling particle effects related functions!"
 superTrailsFailureMsg: "&4SuperTrails not found, particle effect related functions not enabled!"

@@ -27,6 +27,10 @@ attributePlusFailureMsg: "&4未找到attributePlus,未启用属性标签相关�
 sxAttributeSucceedMsg: "&a成功加载SXAttribute,启用属性标签相关功能!"
 sxAttributeFailureMsg: "&4未找到SXAttribute,未启用属性标签相关功能!"
 
+# AttributeSystem 提醒
+attributeSystemSucceedMsg: "&a成功加载AttributeSystem,启用属性标签相关功能!"
+attributeSystemFailureMsg: "&4未找到AttributeSystem,未启用属性标签相关功能!"
+
 # superTrails提醒
 superTrailsSucceedMsg: "&a成功加载SuperTrails,启用粒子效果相关功能!"
 superTrailsFailureMsg: "&4未找到SuperTrails,未启用粒子效果相关功能!"
