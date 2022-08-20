@@ -85,3 +85,10 @@ back:
 notMoneyFailureMsg: "&c你的餘額不足 無法進行購買"
 customMsg: "&8[&a✔&8] &7請在聊天框輸入&a稱號名稱，&7輸入 &aT &7退出操作(不返還扣除資金)"
 cancelMsh: "&8[&a✔&8] &7操作已取消"
+nameBlackListFailureMsg: "&8[&c✘&8] &4稱號名包含非法字符 &a${name}"
+
+# 稱號名稱黑名單
+nameBlackList:
+  - "草"
+  - "傻"
+  - "服主"

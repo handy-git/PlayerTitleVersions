@@ -85,3 +85,9 @@ back:
 notMoneyFailureMsg: "&cYou do not have enough balance to make a purchase"
 customMsg: "&8[&a✔&8] &7Please enter &aTitle name in the chat box, &7input &aT &7Exit the operation (does not return deducted funds)"
 cancelMsh: "&8[&a✔&8] &7 operation cancelled"
+nameBlackListFailureMsg: "&8[&c✘&8] &4Title names containing illegal characters &a${name}"
+
+# Appellation name blacklist
+nameBlackList:
+  - "fuck"
+  - "op"
