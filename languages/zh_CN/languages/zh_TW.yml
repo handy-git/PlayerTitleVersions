@@ -1,0 +1,429 @@
+# 沒權限時候提醒
+noPermission: "&4你沒有權限執行該命令"
+
+# 重載插件提醒
+reloadMsg: "&a插件重載完成"
+
+# 玩家稱號過期提醒
+overdueMsg: "&4你的稱號已經過期"
+
+# vault提醒
+vaultSucceedMsg: "&a成功加載Vault,啟用經濟相關功能!"
+vaultFailureMsg: "&4未找到Vault,未啟用經濟相關功能!"
+
+# placeholderAPI提醒
+placeholderAPISucceedMsg: "&a成功加載placeholderApi,啟用自定義變量功能!"
+placeholderAPIFailureMsg: "&4未找到placeholderApi,啟用自定義變量功能!"
+
+# PlayerPoints提醒
+playerPointsSucceedMsg: "&a成功加載PlayerPoints,啟用點券相關功能!"
+playerPointsFailureMsg: "&4未找到PlayerPoints,未啟用點券相關功能!"
+
+# attributePlus提醒
+attributePlusSucceedMsg: "&a成功加載attributePlus,啟用屬性標籤相關功能!"
+attributePlusFailureMsg: "&4未找到attributePlus,未啟用屬性標籤相關功能!"
+
+# SXAttribute提醒
+sxAttributeSucceedMsg: "&a成功加載SXAttribute,啟用屬性標籤相關功能!"
+sxAttributeFailureMsg: "&4未找到SXAttribute,未啟用屬性標籤相關功能!"
+
+# AttributeSystem 提醒
+attributeSystemSucceedMsg: "&a成功加載AttributeSystem,啟用屬性標簽相關功能!"
+attributeSystemFailureMsg: "&4未找到AttributeSystem,未啟用屬性標簽相關功能!"
+
+# superTrails提醒
+superTrailsSucceedMsg: "&a成功加載SuperTrails,啟用粒子效果相關功能!"
+superTrailsFailureMsg: "&4未找到SuperTrails,未啟用粒子效果相關功能!"
+
+# MmoItems提醒
+mmoItemsSucceedMsg: "&a成功加載MmoItems,啟用MmoItems buff相關功能!"
+mmoItemsFailureMsg: "&4未找到MmoItems,未啟用MmoItems buff相关功能!"
+
+# PlayerParticles 提醒
+playerParticlesSucceedMsg: "&a成功加載PlayerParticles,啟用PlayerParticles粒子效果功能!"
+playerParticlesFailureMsg: "&4未找到PlayerParticles,未啟用PlayerParticles粒子效果功能!"
+
+# /plt help指令管理員出現的提醒
+helps:
+  - "&e&m一一一一一一一一一一一一一&f[&ePlayerTitle&f]&e&m一一一一一一一一一一一一一"
+  - "&e/plt addReward [稱號數量] [類型] [金額]          &f給對應數量的稱號添加獎勵"
+  - "&e/plt buff [addBuff|deleteBuff]   &f新增|刪除buff"
+  - "&e/plt card [create|random]           &f創建｜隨機 稱號卡"
+  - "&e/plt coin [give|set|take] [玩家名稱] [金額]         &f給予｜設置｜拿走 玩家稱號幣"
+  - "&e/plt convert  [類型]        &f轉換數據，類型可選mysql或者sqlite"
+  - "&e/plt getIp     &f獲取服務器地址"
+  - "&e/plt particle [addParticle|deleteParticle]         &f新增｜刪除 粒子"
+  - "&e/plt player [addTitle|setTitle|listTitle|deleteTitle]       &f新增｜設置｜查看｜刪除 玩家稱號"
+  - "&e/plt reload          &f重載插件"
+  - "&e/plt title [add|delete|list|import|description]       &f新增｜刪除｜查看｜導入｜描述 稱號"
+  - "&e/plt clear [title|player|buff|particle|reward]       &f全部｜玩家｜buff｜粒子｜獎勵 的清理"
+  - "&e/plt view [类型] (玩家名)         &f查看對應gui並管理"
+  - "&e/plt shop          &f打開稱號商城gui,可選參數類型,不填默認全部"
+  - "&e/plt open          &f打開稱號倉庫gui"
+  - "&e[]必填 ()選填"
+
+# /plt help指令玩家出現的提醒
+playerHelps:
+  - "&e&m一一一一一一&f[&ePlayerTitle&f]&e&m一一一一一一"
+  - "&e/plt shop                       &f打開稱號商城gui"
+  - "&e/plt open                       &f打開稱號倉庫gui"
+
+paramFailureMsg: "&4參數錯誤"
+noPlayerFailureMsg: "&4該命令只能玩家執行"
+typeFailureMsg: "&4類型錯誤"
+amountFailureMsg: "&4數量只能為大於0的數字"
+idFailureMsg: "&4ID只能為大於0的數字"
+noAir: "&4你的主手上並沒有物品"
+addSucceedMsg: "&a新增稱號成功，該稱號id為: ${id}"
+notIdFailureMsg: "&a操作失敗,沒有這個ID的稱號"
+succeedMsg: "&a命令執行成功"
+failureMsg: "&4命令執行失敗"
+guiDelete: "&6>>&4>>&5>> &f&l點擊刪除 &6<<&4<<&5<<"
+guiManage: "&6>>&4>>&5>> &f&l點擊管理 &6<<&4<<&5<<"
+guiBack: "&a點擊返回"
+currentPage: "&a當前頁:"
+totalPages: "&a總頁數:"
+nextPage: "&a點擊前往下一頁"
+previousPage: "&a點擊前往上一頁"
+all: "&a所有"
+currlimig: "&4非常抱歉,公開版本最多創建100個稱號"
+customLengthMsg: "&4稱號長度超過限制"
+not: "&a無"
+perpetual: "&a永久"
+buySucceed: "&a購買成功"
+buyFailure: "&4購買出現異常,請聯繫管理員!"
+togglesCoolDownMsg: "&4冷卻時間未到,請在${time}秒後切換"
+titleRewardMsg: "&a需求稱號數量: "
+buyTypeFailureMsg: "&a沒有這個購買類型"
+buffTypeFailureMsg: "&a沒有這個BUFF類型"
+
+buyType:
+  all: "&a所有"
+  not: "&a無"
+  vault: "&a金幣"
+  playerPoints: "&a點券"
+  coin: "&a稱號幣"
+  itemStack: "&a物品"
+  permission: "&a權限"
+  activity: "&a活動"
+
+shop:
+  notSufficientFunds: "&4購買失敗,你的餘額不足!"
+  day: "天"
+  noItemInOffHand: "&4購買失敗,副手不能持有該物品!"
+  noBuff: "無"
+
+listTitle:
+  # 查詢玩家稱號列表顯示的標題
+  titleList: "&e&m一一一一一一一&f[&e全部稱號列表§f]&e&m一一一一一一一"
+  # 沒有找到玩家數據
+  noTitleFailureMsg: "&a沒有查詢到稱號"
+  # 數字格式錯誤
+  titleIdFailureMsg: "&4頁數只能為數字"
+  id: "&a稱號ID: "
+  titleName: "&a稱號名: "
+  buyType: "&a購買類型: "
+  amount: "&a金額: "
+  number: "&a數量: "
+
+changeItem:
+  # 沒有找到該稱號
+  noTitleFailuerMsg: "&4没有找到该称号,请检查输入的称号id"
+  # 生成的稱號卡物品前綴, 可以修改,但是嚴禁為空,修改會導致之前的生成的稱號卡無法使用
+  titleCard: "&a稱號卡: "
+  # 序號:${id} 稱號名:${titleName} 效果:${buff} 使用狀態:${useStatus}  切換按鈕:${useButton} 到期時間:${expirationTime}
+  titleCardLore:
+    - ''
+    - '&f[ &c稱號說明 &f]'
+    - '&f&l>> &a顯示稱號：&f> ${titleName}'
+    - '&f&l>> &a使用天數：&f> ${expirationTime}'
+    - ''
+    - '&f[ &c稱號BUFF &f]'
+    - ''
+    - '&c&l>> &a${buff}'
+    - ''
+    - '&6>>&4>>&5>> &f&l點擊獲取 &6<<&4<<&5<<'
+  # 使用稱號卡成功
+  useTitleCardSucceedMsg: "&a使用稱號卡成功"
+  # 使用稱號卡失敗
+  useTitleCardFailureMsg: "&4使用稱號卡失敗"
+  # 沒有找到對應稱號id的數據
+  noTitleFailureMsg: "&4很遺憾,該稱號已經被刪除了"
+
+randomCard:
+  # 生成的稱號卡物品前綴, 可以修改,但是嚴禁為空和與普通稱號卡相同
+  titleCard: "&a隨機稱號卡"
+  # 稱號卡lore
+  titleCardLore:
+    - ''
+    - '&f[ &c稱號卡說明 &f]'
+    - '&f&l>> &a功能：&f> 隨機獲取一個稱號'
+    - '&f&l>> &a使用天數：&f> ${expirationTime}'
+    - ''
+    - '&6>>&4>>&5>> &f&l使用獲取 &6<<&4<<&5<<'
+  # 使用稱號卡成功 ${titleCard}稱號 ${day}天數
+  useTitleCardSucceedMsg: "&a使用隨機稱號卡成功,獲得了:${titleCard}: ${day}"
+  # 使用稱號卡失敗
+  useTitleCardFailureMsg: "&4使用隨機稱號卡失敗"
+  # 沒有找到對應稱號id的數據
+  noTitleMsg: "&4很遺憾,你隨機到了空氣"
+  # 沒有找到對應稱號id的數據
+  noTitle: "&4很遺憾,沒有對應類型的稱號"
+
+view:
+  # 變更名稱
+  changeName: "&a請在聊天框中直接輸入需要修改的稱號名稱,可使用顏色代碼&"
+  # 變更類型
+  changeType: "&a請在聊天框中直接輸入需要修改的類型(如果是變更物品類型,需手持物品),可選:"
+  # 變更物品
+  changeItem: "&a請主手持需要新增的物品,聊天框中直接輸入: yes"
+  confirmFailureMsg: "&a輸入的命令不是yes,變更程序已經退出"
+  # 變更時間
+  changeDay: "&a請在聊天框中直接輸入需要修改的時間數字,0為永久"
+  # 變更金額/物品
+  changeAmount: "&a請在聊天框中直接輸入需要修改的價格/數量"
+
+# 用於輸入指令時候tab自動提醒幫助(只建議翻譯,不建議更改)
+tabHelp:
+  titleId: "請輸入稱號id"
+  buffId: "請輸入buffId"
+  titleName: "請輸入稱號名稱"
+  titleDescription: "請輸入稱號描述可使用,換行"
+  coinAmount: "請輸入金額,必須正整數"
+  titleAmount: "請輸入稱號價格/物品數量,必須正整數"
+  setTitleDay: "請輸入給予的天數,必須正整數"
+  buff: "請輸入屬性標籤,可用#表示空格,例如: 物理傷害:#100"
+  addTitleDay: "請輸入該稱號售賣時間,必須正整數(0,為永久)"
+  changeItemNum: "請輸入該物品的數量,必須正整數"
+  titleNumber: "請輸入稱號數量,必須正整數"
+  titleNumberAmount: "請輸入獎勵價格/物品數量,必須正整數"
+  titlePermission: "請輸入需要的稱號權限"
+  potionEffectLevel: "請輸入藥水等級"
+  potionEffectHide: "是否隱藏粒子"
+  setCustomNum: "請輸入給予的次數,必須正整數"
+  ordinaryColor: "請輸入RGB顏色代碼,例如 66,120,150"
+
+# 藥水效果漢化
+buffMsg:
+  speed: "速度"
+  slow: "緩慢"
+  fast_digging: "急迫"
+  slow_digging: "挖掘疲勞"
+  increase_damage: "力量"
+  heal: "瞬間治療"
+  harm: "瞬間傷害"
+  jump: "跳躍提升"
+  confusion: "反胃"
+  regeneration: "生命恢復"
+  damage_resistance: "抗性提升"
+  fire_resistance: "防火"
+  water_breathing: "水下呼吸"
+  invisibility: "隱身"
+  blindness: "失明"
+  night_vision: "夜視"
+  hunger: "飢餓"
+  weakness: "虛弱"
+  poison: "中毒"
+  wither: "凋零"
+  health_boost: "生命提升"
+  absorption: "傷害吸收"
+  saturation: "飽和"
+  glowing: "發光"
+  levitation: "漂浮"
+  luck: "幸運"
+  unluck: "霉運"
+  slow_falling: "緩降"
+  conduit_power: "潮湧能量"
+  dolphins_grace: "海豚的恩惠"
+  bad_omen: "不祥之兆"
+  hero_of_the_village: "村莊英雄"
+
+# 粒子效果漢化
+superTrails:
+  heart: "粒子特效:心型"
+  angry: "粒子特效:心碎"
+  magic: "粒子特效:煙霧"
+  fun: "粒子特效:好玩"
+  colors: "粒子特效:彩色"
+  clouds: "粒子特效:雲彩"
+  witch: "粒子特效:女巫"
+  ender: "粒子特效:末地"
+  green: "粒子特效:綠色"
+  spark: "粒子特效:火花"
+  flame: "粒子特效:火焰"
+  white: "粒子特效:白色煙霧"
+  note: "粒子特效:音符"
+  snow: "粒子特效:雪花"
+  water: "粒子特效:水滴"
+  lava: "粒子特效:岩漿"
+  crit: "粒子特效:暴擊"
+  smoke: "粒子特效:煙霧"
+  spell: "粒子特效:咒語"
+  enchant: "粒子特效:附魔"
+  splash: "粒子特效:飛濺"
+  slime: "粒子特效:史萊姆"
+  snowballs: "粒子特效:雪球"
+  spell_23: "粒子特效:咒語2"
+  void: "粒子特效:虛無"
+  lava_pop: "粒子特效:黑心"
+  rainbow_wings_1_9: "粒子特效:白點"
+  dragon_breath_1_9: "粒子特效:龍息"
+  endrod_1_9: "粒子特效:末影燭"
+  damage_1_9: "粒子特效:傷害"
+  sand_1_10: "粒子特效:沙子"
+  totem_1_11: "粒子特效:圖騰"
+  wings_angel: "翅膀特效:天使"
+  wings_butterfly: "翅膀特效:蝴蝶"
+  wings: "翅膀特效:翅膀"
+  rbuilder: "建造者"
+  blocks: "方塊特效:多種方塊"
+  glass_b: "方塊特效:彩色羊毛"
+  flower_b: "方塊特效:彩色玻璃"
+  carpet_b: "方塊特效:下屆礦石"
+  redstn_b: "方塊特效:彩色粘土"
+  sea_b: "方塊特效:多種礦石"
+  wheat_b: "方塊特效:紅石方塊"
+  ore_b: "方塊特效:多種石頭"
+  clay_b: "方塊特效:多種礦物"
+  tear_r: "散落類特效:惡魂之淚"
+  blood_r: "散落類特效:紅石"
+  dia_r: "散落類特效:鑽石"
+  wart_r: "散落類特效:地獄疣"
+  gold_r: "散落類特效:金粒"
+  confetti: "小徑特效:小徑"
+  colorSpin: "旋轉特效:彩色"
+  fairy: "仙女特效:彩色"
+
+# playerParticles 粒子效果漢化
+playerParticles:
+  arrows: "射箭後觸發粒子效果"
+  batman: "頭上出現了一個蝙蝠（這還要從一隻蝙蝠說起....."
+  beam: "四周出現16條粒子特效線"
+  block_break: "破壞方塊後產生粒子特效"
+  block_place: "放置方塊後產生粒子特效"
+  celebration: "四周出現煙花的效果，其實就是煙花發射的效果+粒子特效"
+  chains: "[鏈條]腳底四周出現4個點"
+  companion: "粒子效果會在玩家身邊轉圈圈，從頭到腳；從腳到頭"
+  cube: "一個正方體包圍你，正方體會轉動"
+  death: "死神"
+  feet: "粒子效果出現在腳底"
+  fishing: "漁業"
+  halo: "主角光環（最完美的描述"
+  hurt: "被仙人掌佔便宜[刺]後會顯示粒子效果"
+  ico_sphere: "ico球體"
+  invocation: "腳底出現一個很大的光環[神聖]，光環被像個祭壇"
+  move: "移動後才會顯示粒子效果；顯示在腳下"
+  normal: "粒子特效出現在四周。默認的風格"
+  orbit: "粒子特效會盤旋在身邊"
+  outline: "輪廓"
+  overhead: "粒子特效沒有規律的出現在你頭上"
+  point: "頭上出現一個點"
+  popper: "粒子特效從半身到頭，像個冰淇淋"
+  pulse: "1個圈在你腳下慢慢擴大"
+  quad_helix: "一個不倒不立的冰淇淋在你身邊，從頭到腳；從腳到頭"
+  rings: "兩個互相垂直的圈圍繞著你，如果看後背像個x"
+  sphere: "一個圓體把你包住了"
+  spin: "頭上一個曲線在一直轉圈圈"
+  spiral: "一個曲線在你半身腰轉圈圈"
+  swords: "當你拿劍錘別人的時候[戰鬥]，粒子特效會顯示出來"
+  teleport: "心靈運輸"
+  thick: "粒子特效很密集的在你身邊亂走，而且還會穿入你的身體"
+  trail: "足跡"
+  twins: "兩條曲線一直轉在你身邊，不會到頭；也不會到腳"
+  vortex: "一個由粒子特效形成的圓筒包住了你"
+  whirl: "粒子形成的螺旋狀出現在你腳底"
+  whirlwind: "一個旋流在你腳底，旋流會形成一個圈"
+  wings: "你的後背會出現翅膀"
+
+# playerParticles 粒子類型漢化
+playerParticlesEffects:
+  ambient_entity_effect: "信標效果"
+  angry_villager: "村民憤怒效果"
+  ash: "靈魂沙峽谷的顆粒效果"
+  barrier: "屏障的粒子效果"
+  block: "方塊被破壞效果"
+  bubble: "水中氣泡效果"
+  bubble_column_up: "靈魂沙產生的湧流氣泡柱效果"
+  bubble_pop: "氣泡柱頂部的粒子"
+  campfire_cosy_smoke: "營火的煙霧效果"
+  campfire_signal_smoke: "放置在乾草塊上的營火產生的煙霧效果"
+  cloud: "實體死亡時產生的煙霧粒子"
+  composter: "堆肥桶被填充時產生的粒子"
+  crimson_spore: "緋紅森林群系中飄散的顆粒"
+  crit: "暴擊產生的粒子"
+  current_down: "岩漿塊產生的渦流氣泡柱"
+  damage_indicator: "生物受近戰攻擊時產生的粒子"
+  dolphin: "海豚產生的水花粒子"
+  dragon_breath: "龍息粒子"
+  dripping_dripstone_lava: "滴水石錐滲出的熔岩粒子"
+  dripping_dripstone_water: "滴水石錐滲出的水粒子"
+  dripping_honey: "滲出的蜂蜜粒子"
+  dripping_lava: "滲出的熔岩粒子"
+  dripping_obsidian_tear: "哭泣的黑曜石滲出的粒子"
+  dripping_water: "滲過方塊的水粒子"
+  dust: "紅石產生的粒子（但卻是黑色的）"
+  dust_color_transition: "激活的Sculk Sensor產生的粒子"
+  elder_guardian: "遠古守衛者"
+  electric_spark: "閃電擊中銅塊時產生的粒子"
+  enchant: "附魔台的符號文字"
+  enchanted_hit: "生物被附有鋒利、亡靈殺手或節肢殺手的劍或斧攻擊時出現的粒子"
+  end_rod: "末地燭產生的粒子"
+  entity_effect: "帶有狀態效果的生物身上的粒子"
+  explosion: "爆炸時出現的粒子"
+  explosion_emitter: "爆炸時出現的粒子（更多更大！）"
+  falling_dripstone_lava: "滴水石錐滴落的熔岩粒子"
+  falling_dripstone_water: "滴水石錐滴落的水粒子"
+  falling_dust: "下落的灰塵粒子"
+  falling_honey: "滴落的蜂蜜粒子"
+  falling_lava: "滴落的熔岩粒子"
+  falling_nectar: "蜜蜂掉落的花粉粒子"
+  falling_obsidian_tear: "哭泣的黑曜石滴落的粒子"
+  falling_spore_blossom: "孢子花掉落的孢子粒子"
+  falling_water: "滴落的水粒子"
+  firework: "煙花火箭的尾跡粒子"
+  fishing: "釣魚時出現的水花粒子"
+  flame: "火苗粒子"
+  flash: "煙花爆炸時的閃爍效果"
+  glow: "發光魷魚產生的熒光粒子"
+  glow_squid_ink: "發光魷魚被攻擊時噴的熒光墨汁"
+  footstep: "足跡"
+  happy_villager: "使用骨粉、與村民交易時出現的粒子"
+  heart: "愛心粒子"
+  instant_effect: "噴濺藥水和滯留藥水破碎時產生的粒子"
+  item: "玩家進食、物品損壞等時產生的碎片"
+  item_slime: "史萊姆著地產生的粒子"
+  item_snowball: "扔出雪球時出現的粒子"
+  landing_honey: "著地的蜂蜜粒子"
+  landing_lava: "著地的熔岩粒子"
+  landing_obsidian_tear: "哭泣的黑曜石滲出的已著地的粒子"
+  large_smoke: "大的煙霧粒子"
+  lava: "熔岩產生的火花粒子"
+  light: "光！"
+  mycelium: "菌絲產生的孢子粒子"
+  nautilus: "激活的潮湧核心產生的粒子"
+  note: "音符粒子"
+  poof: "生物死亡時的煙霧粒子"
+  portal: "傳送門產生的粒子（運動的）"
+  rain: "雨滴粒子"
+  Reverse_portal: "傳送門產生的粒子（靜止的）"
+  scrape: "用斧為銅塊除鏽時產生的粒子"
+  small_flame: "小火焰"
+  smoke: "煙霧粒子"
+  sneeze: "幼年熊貓打噴嚏的粒子"
+  snowflake: "雪花"
+  soul: "靈魂粒子"
+  soul_fire_flame: "靈魂火把產生的火苗粒子"
+  Spell: "藥水粒子"
+  spit: "羊駝啐生物時產生的粒子"
+  splash: "水花粒子"
+  spore_blossom_air: "在孢子花周圍發散的孢子粒子"
+  squid_ink: "魷魚的墨汁粒子"
+  sweep_attack: "劍的橫掃動畫"
+  totem_of_undying: "激活不死圖騰時的粒子"
+  underwater: "水下飄散的顆粒"
+  vibration: "傳向Sculk Sensor的振動粒子"
+  warped_spore: "詭異森林群系中飄散的顆粒"
+  wax_off: "用斧給銅塊除蠟時出現的粒子"
+  wax_on: "用蜜脾給銅塊塗蠟時出現的粒子"
+  white_ash: "玄武岩三角洲群系中飄散的顆粒"
+  witch: "女巫產生的粒子"

@@ -1,0 +1,50 @@
+# 語言文件 [可選 中文簡體:zh_CN;中文繁體:zh_TW;English:en_US]
+# 第一次更改語言請重啟服務器
+language: zh_TW
+
+# 默認稱號
+default: "§f[ §7玩家 §f]"
+
+# 請在添加稱號前修改默認前綴和後綴,不然之後修改只對之後新增的生效
+# 稱號默認前綴
+prefixBrackets: "§f[ "
+
+# 稱號默認後綴
+suffixBrackets: " §f]"
+
+# 聊天顯示稱號
+isChat: true
+
+# 聊天显示称号格式
+isChatFormat: " "
+
+# tab列表和玩家頭頂顯示稱號,默認關閉
+# 跟計分板插件衝突,請使用變量功能進行兼容
+isTab: false
+
+# 切換稱號的冷卻時間,單位秒 -設置0為關閉該功能
+togglesCoolDown: 3
+
+# 是否開啟稱號buff功能，可選true/false。 true情況下，稱號buff會正常加載，false情況下，稱號buff全部無效(可用於一些大廳服或者特殊rpg服)
+isEnableBuff: true
+
+# 是否開啟全局倉庫buff，可選true/false。 true情況下，玩家背包的所有稱號的buff都會加載，false情況下，只會加載玩家佩戴的稱號buff
+isAllBuff: false
+
+# 是否開啟自動使用, 可選true/false。 true情況下，玩家獲取到新稱號會放到倉庫並自動使用,false情況下，玩家獲取到新稱號只會放到倉庫不會自動使用
+isAutoUse: false
+
+# 是否開啟更新提醒,建議開啟
+isCheckUpdate: true
+
+# op登錄時候是否發送更新提醒
+isCheckUpdateToOpMsg: true
+
+# 是否開啟雲漢化(使用雲服務資源來進行各種物品名稱的自動漢化)
+cloudChinesization: true
+
+# 玩家自定義稱號長度限制
+customLength: 16
+
+# 完全版本簽名驗證
+sign: 123456
