@@ -7,7 +7,7 @@
     <groupId>com.handy.playertitle</groupId>
     <artifactId>PlayerTitle</artifactId>
     <name>PlayerTitle</name>
-    <version>3.3.7</version>
+    <version>3.4.1</version>
     <description>一个有点好用的称号插件</description>
 
     <properties>

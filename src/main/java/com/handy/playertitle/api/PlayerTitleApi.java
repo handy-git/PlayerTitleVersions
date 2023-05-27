@@ -6,6 +6,7 @@ import com.handy.playertitle.api.param.TitleParticleParam;
 import com.handy.playertitle.entity.TitlePlayer;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -276,6 +277,17 @@ public class PlayerTitleApi {
      */
     public boolean playerExistTitleId(String playerName, Integer titleId) {
         return true;
+    }
+
+    /**
+     * 获取玩家所有称号ID
+     *
+     * @param playerName 玩家名称
+     * @return 所有称号ID
+     * @since 3.4.1
+     */
+    public List<Integer> findAllTitleIdByPlayerName(String playerName) {
+        return new ArrayList<>();
     }
 
 }
