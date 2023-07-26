@@ -31,7 +31,6 @@ public class TitleListParam {
      *
      * @since 2.10.0
      */
-    @Deprecated
     private BuyTypeEnum buyTypeEnum;
 
     /**

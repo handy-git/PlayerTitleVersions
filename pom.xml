@@ -7,12 +7,12 @@
     <groupId>com.handy.playertitle</groupId>
     <artifactId>PlayerTitle</artifactId>
     <name>PlayerTitle</name>
-    <version>3.4.1</version>
+    <version>3.4.6</version>
     <description>一个有点好用的称号插件</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot-api.vesion>1.19.2-R0.1-SNAPSHOT</spigot-api.vesion>
+        <spigot-api.vesion>1.20.1-R0.1-SNAPSHOT</spigot-api.vesion>
         <lombok.version>1.18.24</lombok.version>
     </properties>
 

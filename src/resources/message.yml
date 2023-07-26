@@ -1,0 +1,17 @@
+# 消息,用来自定义称号被获取后的提醒消息
+# 变量 ${player} 玩家名 ${title} 称号名
+# 称号id使用/plt adminShop或者/plt listTitle 查看
+# 消息类型分为三种: ActionBar (1.9+) ; title (1.9+) ; Message(全版本)
+
+# 格式示例  称号id: 设置type和msg,一直复制即可
+1:
+  type: title
+  msg: "恭喜${player} 获得了称号: ${title}"
+
+#2:
+#  type: ActionBar
+#  msg: "恭喜${player} 获得了活动称号: ${title}"
+
+#3:
+#  type: Message
+#  msg: "恭喜${player} 获得了普通称号: ${title}"

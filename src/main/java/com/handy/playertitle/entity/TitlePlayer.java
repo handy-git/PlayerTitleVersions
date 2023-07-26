@@ -15,22 +15,49 @@ import java.util.List;
 @Data
 public class TitlePlayer implements Serializable {
 
+    /**
+     * ID
+     */
     private Integer id;
 
+    /**
+     * 玩家名称
+     */
     private String playerName;
 
+    /**
+     * 玩家uuid
+     */
     private String playerUuid;
 
+    /**
+     * 称号id
+     */
     private Integer titleId;
 
+    /**
+     * 称号名称
+     */
     private String titleName;
 
+    /**
+     * 到期时间
+     */
     private Date expirationTime;
 
+    /**
+     * 展示称号
+     */
     private Boolean isUseShow;
 
+    /**
+     * 属性称号
+     */
     private Boolean isUseBuff;
 
+    /**
+     * 粒子称号
+     */
     private Boolean isUseParticle;
 
     /**

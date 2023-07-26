@@ -1,0 +1,75 @@
+# gui标题
+title: "&f[&e称号功能选择&f]"
+
+# 是否开启该功能,如果开启 在称号仓库中右键点击后会进入二级选择页面,可以分别设置展示,属性,粒子三种称号,三个变量
+# 如果关闭 在称号仓库中右键无法进入该gui页面,效果跟直接左键一样,只能使用一个称号同时包含全部信息
+enable: false
+
+# 展示称号(前缀称号) 对应变量 %playerTitle_use%
+show:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 11
+  # 在gui中的材质名称
+  material: DIAMOND
+  # 在gui中的名称
+  name: "   &8[&5ℑ&8] ▪ &8[&d展示称号&8]"
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7当前状态 &8[${useStatus}&8]'
+    - ''
+    - '&8▪ &7点击设置为&a展示&7称号'
+    - '&8▪ &7你只能设置一个&a展示&7称号'
+    - ''
+    - ' &8[&a✔&8] &7点击切换'
+
+# 属性称号(中缀)  对应变量 %playerTitle_use_buff%
+buff:
+  enable: true
+  index: 13
+  material: bread
+  name: "   &8[&6ℑ&8] ▪ &8[&e属性称号&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7当前状态 &8[${useStatus}&8]'
+    - ''
+    - '&8▪ &7点击设置为&a属性&7称号'
+    - '&8▪ &7你只能设置一个&a属性&7称号'
+    - ''
+    - ' &8[&a✔&8] &7点击切换'
+
+# 粒子称号(后缀)  对应变量 %playerTitle_use_particle%
+particle:
+  enable: true
+  index: 15
+  material: BLAZE_POWDER
+  name: "   &8[&6ℑ&8] ▪ &8[&e粒子称号&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7当前状态 &8[${useStatus}&8]'
+    - ''
+    - '&8▪ &7点击设置为&a粒子&7称号'
+    - '&8▪ &7你只能设置一个&a粒子&7称号'
+    - ''
+    - ' &8[&a✔&8] &7点击切换'
+
+# ${useStatus}对应的变量
+yesStatus: "&a设置中"
+noStatus: "&c未设置"
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0

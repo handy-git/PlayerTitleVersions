@@ -25,7 +25,7 @@ public class PlayerTitleApi {
     }
 
     public static PlayerTitleApi getInstance() {
-        return PlayerTitleApi.SingletonHolder.INSTANCE;
+        return SingletonHolder.INSTANCE;
     }
 
     /**
@@ -254,7 +254,6 @@ public class PlayerTitleApi {
      * @since 2.9.9
      */
     public void removeBuff(Player player) {
-
     }
 
     /**
@@ -264,13 +263,12 @@ public class PlayerTitleApi {
      * @since 2.9.9
      */
     public void setBuff(Player player) {
-
     }
 
     /**
      * 玩家是否有对应的称号ID
      *
-     * @param playerName 玩家name
+     * @param playerName 玩家名称
      * @param titleId    称号id
      * @return true 有, false 无
      * @since 3.1.1

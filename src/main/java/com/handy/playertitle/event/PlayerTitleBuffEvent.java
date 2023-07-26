@@ -35,7 +35,7 @@ public class PlayerTitleBuffEvent extends Event {
     public PlayerTitleBuffEvent(Player player, List<TitleBuff> titleBuffList) {
         this.player = player;
         this.isAllBuff = false;
-        this.titleBuffList = new ArrayList<>();
+        this.titleBuffList = titleBuffList;
         this.titleBuffMap = new HashMap<>();
     }
 

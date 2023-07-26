@@ -12,12 +12,24 @@ import java.io.Serializable;
 @Data
 public class TitleBuff implements Serializable {
 
+    /**
+     * ID
+     */
     private Integer id;
 
+    /**
+     * 称号id
+     */
     private Integer titleId;
 
+    /**
+     * buff类型
+     */
     private String buffType;
 
+    /**
+     * buff
+     */
     private String buffContent;
 
     /**

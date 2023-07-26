@@ -1,0 +1,159 @@
+# gui标题
+title: "&f[&e称号商城管理&f]"
+
+# 删除
+delete:
+  enable: true
+  index: 12
+  name: "     &8[&e点击删除&8]"
+  material: REDSTONE
+  isEnchant: false
+  lore:
+    - " &8[&a✔&8] &7点击删除"
+  custom-model-data: 0
+
+# 显示状态
+status:
+  enable: true
+  index: 14
+  name: "   &8[&a显示状态&8]"
+  material: TORCH
+  #是否附魔效果
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前状态 &8[${status}&8]'
+    - ''
+    - ' &8[&a✔&8] &7点击切换'
+  custom-model-data: 0
+
+# 变更名称
+name:
+  enable: true
+  index: 29
+  name: "   &8[&a变更名称&8]"
+  material: NAME_TAG
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前名称: ${titleName}'
+    - ''
+    - ' &8[&a✔&8] &7点击更改'
+  custom-model-data: 0
+
+# 变更类型
+buyType:
+  enable: true
+  index: 30
+  name: "   &8[&a变更类型&8]"
+  material: NAME_TAG
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前类型 &8[${buyType}&8]'
+    - ''
+    - ' &8[&a✔&8] &7点击更改'
+  custom-model-data: 0
+
+# 变更物品
+item:
+  enable: true
+  index: 31
+  name: "   &8[&a变更物品&8]"
+  material: NAME_TAG
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前物品 &8[&a${item}&8]'
+    - ''
+    - ' &8[&a✔&8] &7点击更改'
+  custom-model-data: 0
+
+# 变更价格
+price:
+  enable: true
+  index: 32
+  name: "   &8[&a变更价格&8]"
+  material: NAME_TAG
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前价格 &8[&a${price}&8]'
+    - ''
+    - ' &8[&a✔&8] &7点击更改'
+  custom-model-data: 0
+
+# 变更天数
+day:
+  enable: true
+  index: 33
+  name: "      &8[&a变更天数&8]"
+  material: NAME_TAG
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前天数 &8[&a${day}&8]'
+    - ''
+    - ' &8[&a✔&8] &7点击更改'
+  custom-model-data: 0
+
+# 称号buff
+buff:
+  enable: true
+  index: 40
+  name: "     &8[&a称号BUFF&8]"
+  material: BOOK
+  isEnchant: false
+  lore:
+    - ''
+    - '&f[ &c称号BUFF &f]'
+    - '&c&l>> &a${buff}'
+  custom-model-data: 0
+
+# 称号粒子
+particle:
+  enable: true
+  index: 39
+  name: "     &8[&a称号粒子&8]"
+  material: BOOK
+  isEnchant: false
+  lore:
+    - ''
+    - '&f[ &c称号粒子 &f]'
+    - '&c&l>> &a${particle}'
+  custom-model-data: 0
+
+# 描述
+description:
+  enable: true
+  index: 41
+  name: "     &8[&a称号描述&8]"
+  material: BOOK
+  isEnchant: false
+  lore:
+    - ''
+    - '&f[ &c称号描述 &f]'
+    - '&c&l>> &a${description}'
+  custom-model-data: 0
+
+# 返回按钮
+back:
+  enable: true
+  index: 49
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,50,51,52,53
+  material: BLACK_STAINED_GLASS_PANE
+  isEnchant: false
+  name: "       &8[&7分割板&8]"
+  lore:
+    - "&7哎呀,不要随便戳人家啦"
+  custom-model-data: 0
