@@ -10,4 +10,25 @@
 
 ### [文档地址](https://ricedoc.handyplus.cn/wiki/PlayerTitle/README/)
 
+### 引入jar
+
+* 第一步
+```
+<repositories>
+    <repository>
+        <id>handy-maven</id>
+        <url>https://maven.handyplus.cn/repository/maven-public/</url>
+    </repository>
+</repositories>
+```
+* 第二步
+```
+<dependency>
+  <groupId>com.handy.playertitle</groupId>
+  <artifactId>PlayerTitle</artifactId>
+  <version>3.4.6</version>
+  <scope>provided</scope>
+</dependency>
+```
+
 ### [javadoc](https://handy-git.github.io/PlayerTitleVersions/)
