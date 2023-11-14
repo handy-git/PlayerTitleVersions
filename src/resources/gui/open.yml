@@ -1,6 +1,7 @@
 # gui标题
 title: "&f[&e称号仓库&f]"
 viewTitle: "&f[&e${player}称号仓库管理&f]"
+size: 54
 
 # 默认称号的样式
 open:
@@ -19,49 +20,49 @@ open:
     info:
       - ''
       - '&f[ &c称号说明 &f]'
-      - '&f&l>> &a显示称号：&f> ${titleName}'
-      - '&f&l>> &a到期时间：&f> ${expirationTime}'
+      - '&8▪ &a显示称号: &f${titleName}'
+      - '&8▪ &a到期时间: &f${expirationTime}'
     description:
       - ''
       - '&f[ &c称号描述 &f]'
-      - '&c&l>> &a${description}'
+      - '&8▪ &a${description}'
     buff:
       - ''
       - '&f[ &c称号BUFF &f]'
-      - '&c&l>> &a${buff}'
+      - '&8▪ &a${buff}'
     particle:
       - ''
       - '&f[ &c称号粒子 &f]'
-      - '&c&l>> &a${particle}'
+      - '&8▪ &a${particle}'
     status:
       - ''
       - '&f[ &c称号状态 &f]'
-      - '&c&l>> ${useStatus}'
+      - '&8▪ ${useStatus}'
     button:
       - ''
       - '${useButton}'
   viewLore:
     - ''
     - '&f[ &c称号说明 &f]'
-    - '&f&l>> &a称号编号：&f> ${id}'
-    - '&f&l>> &a显示称号：&f> ${titleName}'
+    - '&8▪ &a称号编号: &f> ${id}'
+    - '&8▪ &a显示称号: &f> ${titleName}'
     - ''
     - '&f[ &c称号描述 &f]'
-    - '&c&l>> &a${description}'
+    - '&8▪ &a${description}'
     - ''
     - '&f[ &c称号BUFF &f]'
-    - '&c&l>> &a${buff}'
+    - '&8▪ &a${buff}'
     - ''
     - '&f[ &c称号粒子 &f]'
-    - '&c&l>> &a${particle}'
+    - '&8▪ &a${particle}'
     - ''
-    - '&8[&a✔&8] &7点击删除'
+    - '&8[&a✔&8] &a点击删除'
 
 inUse: "&a使用中"
 notUse: "&4未使用"
-useButton: "&8[&a✔&8] &7点击使用"
-noUseButton: "&8[&a✔&8] &7点击禁用"
-useSelectButton: "&8[&a✔&8] &7点击操作"
+useButton: "&8[&a✔&8] &a点击使用"
+noUseButton: "&8[&a✔&8] &a点击禁用"
+useSelectButton: "&8[&a✔&8] &a点击操作"
 
 # 称号数量
 number:

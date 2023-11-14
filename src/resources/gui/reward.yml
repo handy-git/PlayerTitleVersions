@@ -1,6 +1,7 @@
 # gui标题
 title: "&f[&e称号奖励&f]"
 viewTitle: "&f[&e称号奖励管理&f]"
+size: 54
 
 # 奖励设置
 reward:
@@ -11,30 +12,30 @@ reward:
   lore:
     - ''
     - '&f[ &c称号奖励说明 &f]'
-    - '&f&l>> &a需求数量：&f> ${number}'
+    - '&8▪ &a需求数量: &f${number}'
     - ''
     - '&f[ &c称号奖励 &f]'
     - ''
-    - '&c&l>> &a${rewardType} : ${amount}'
+    - '&8▪ &a${rewardType}: ${amount}'
     - ''
-    - '&f[ &c个人称号数量 &f]'
-    - '&c&l>> &a当前拥有 &e${myTitleNumber}'
+    - '&f[ &c拥有数量 &f]'
+    - '&8▪ &a${myTitleNumber}'
     - ''
   viewLore:
     - ''
     - '&f[ &c称号奖励说明 &f]'
-    - '&f&l>> &a奖励编号：&f> &e${id}'
-    - '&f&l>> &a需求数量：&f> ${number}'
+    - '&8▪ &a奖励编号: &f${id}'
+    - '&8▪ &a需求数量: &f${number}'
     - ''
     - '&f[ &c称号奖励 &f]'
     - ''
-    - '&c&l>> &a${rewardType} : ${amount}'
+    - '&8▪ &a${rewardType}:${amount}'
     - ''
-    - '&6>>&4>>&5>> &f&l点击删除 &6<<&4<<&5<<'
+    - '&8[&a✔&8] &a点击删除'
 
-useButton: "&6>>&4>>&5>> &e已领取 &6<<&4<<&5<<"
-useNotButton: "&a>>&4>>&5>> &a点击领取 &a<<&4<<&5<<"
-unableButton: "&a>>&4>>&5>> &f数量不足 &a<<&4<<&5<<"
+useButton: "&8[&a✔&8] &a已领取"
+useNotButton: "&8[&a✔&8] &a点击领取"
+unableButton: "&8[&c✘&8] &7数量不足"
 
 # 上一页
 previousPage:

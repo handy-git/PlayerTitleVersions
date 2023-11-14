@@ -1,12 +1,3 @@
-# 没权限时候提醒
-noPermission: "&4你没有权限执行该命令"
-
-# 重载插件提醒
-reloadMsg: "&a插件重载完成"
-
-# 玩家称号过期提醒
-overdueMsg: "&8[&a✔&8] &7你的 ${title} &7称号已过期"
-
 # vault提醒
 vaultSucceedMsg: "&a成功加载Vault,启用经济相关功能!"
 vaultFailureMsg: "&4未找到Vault,未启用经济相关功能!"
@@ -68,36 +59,33 @@ playerHelps:
   - "&e/plt shop                       &f打开称号商城gui"
   - "&e/plt open                       &f打开称号仓库gui"
 
-paramFailureMsg: "&4参数错误"
-noPlayerFailureMsg: "&4该命令只能玩家执行"
-typeFailureMsg: "&4类型错误"
-amountFailureMsg: "&4数量只能为大于0的数字"
-idFailureMsg: "&4ID只能为大于0的数字"
-noAir: "&4你的主手上并没有物品"
-addSucceedMsg: "&a新增称号成功，该称号id为: ${id}"
-notIdFailureMsg: "&a操作失败,没有这个ID的称号"
-succeedMsg: "&a命令执行成功"
-failureMsg: "&4命令执行失败"
-guiDelete: "&8[&a✔&8] &7点击删除"
-guiManage: "&8[&a✔&8] &7点击管理"
-guiBack: "&a点击返回"
-currentPage: "&a当前页:"
-totalPages: "&a总页数:"
-nextPage: "&a点击前往下一页"
-previousPage: "&a点击前往上一页"
-all: "&a所有"
-currlimig: "&4非常抱歉,公开版本最多创建100个称号"
-customLengthMsg: "&4称号长度超过限制"
+paramFailureMsg: "&8[&c✘&8] &7参数错误"
+noPlayerFailureMsg: "&8[&c✘&8] &7该命令只能玩家执行"
+typeFailureMsg: "&8[&c✘&8] &7类型错误"
+amountFailureMsg: "&8[&c✘&8] &7只能输入数字"
+noAir: "&8[&c✘&8] &7主手没有物品"
+addSucceedMsg: "&8[&a✔&8] &a新增称号成功 称号id:${id}"
+notIdFailureMsg: "&8[&c✘&8] &7操作失败 没有这个id"
+succeedMsg: "&8[&a✔&8] &a命令执行成功"
+failureMsg: "&8[&c✘&8] &7命令执行失败"
+guiDelete: "&8[&a✔&8] &a点击删除"
+guiManage: "&8[&a✔&8] &a点击管理"
+currlimig: "&8[&c✘&8] &7您正在使用PlayerTitle插件免费版,无法继续创建"
+customLengthMsg: "&8[&c✘&8] &7称号不能超过&a${len}&7字符"
 not: "&a无"
 perpetual: "&a永久"
-buySucceed: "&a购买成功"
-buyFailure: "&4购买出现异常,请联系管理员!"
-togglesCoolDownMsg: "&4冷却时间未到,请在${time}秒后切换"
+buySucceed: "&8[&a✔&8] &a购买成功"
+buyFailure: "&8[&c✘&8] &7购买出现异常,请联系管理员!"
+togglesCoolDownMsg: "&8[&c✘&8] &7冷却时间未到,请在&a${time}&7秒后切换"
 titleRewardMsg: "&a需求称号数量: "
-buyTypeFailureMsg: "&a没有这个购买类型"
-buffTypeFailureMsg: "&a没有这个BUFF类型"
-titleExistMsg: "&4你已经拥有这个称号了"
+buyTypeFailureMsg: "&8[&c✘&8] &7没有这个购买类型"
+buffTypeFailureMsg: "&8[&c✘&8] &7没有这个BUFF类型"
+titleExistMsg: "&8[&a✔&8] &a您已拥有这个称号了"
 copy: "&r   &8[&a点击复制&8]"
+noPermission: "&8[&c✘&8] &7你没有权限执行该命令"
+reloadMsg: "&8[&a✔&8] &a插件重载完成"
+overdueMsg: "&8[&a✔&8] &a你的 ${title} &a称号已过期"
+playerTitleBuffOffMsg: "&8[&a✔&8] &7${world}世界中称号buff功能已关闭"
 
 buyType:
   all: "&a所有"
@@ -110,7 +98,7 @@ buyType:
   activity: "&a活动"
 
 shop:
-  notSufficientFunds: "&4购买失败,你的余额不足!"
+  notSufficientFunds: "&8[&c✘&8] &7余额不足"
   day: "天"
   noItemInOffHand: "&4购买失败,副手不能持有该物品!"
   noBuff: "无"
@@ -130,27 +118,27 @@ listTitle:
 
 changeItem:
   # 没有找到该称号
-  noTitleFailuerMsg: "&4没有找到该称号,请检查输入的称号id"
+  noTitleFailMsg: "&8[&c✘&8] &7没有找到该称号"
   # 生成的称号卡物品前缀, 可以修改,但是严禁为空,修改会导致之前的生成的称号卡无法使用
   titleCard: "&a称号卡: "
   # 序号:${id} 称号名:${titleName} 效果:${buff} 使用状态:${useStatus}  切换按钮:${useButton} 到期时间:${expirationTime}
   titleCardLore:
     - ''
     - '&f[ &c称号说明 &f]'
-    - '&f&l>> &a显示称号：&f> ${titleName}'
-    - '&f&l>> &a使用天数：&f> ${expirationTime}'
+    - '&8▪ &a显示称号: &f${titleName}'
+    - '&8▪ &a使用天数: &f${expirationTime}'
     - ''
     - '&f[ &c称号BUFF &f]'
     - ''
-    - '&c&l>> &a${buff}'
+    - '&8▪ &a${buff}'
     - ''
-    - '&6>>&4>>&5>> &f&l点击获取 &6<<&4<<&5<<'
+    - '&8[&a✔&8] &a点击使用'
   # 使用称号卡成功
-  useTitleCardSucceedMsg: "&a使用称号卡成功"
+  useTitleCardSucceedMsg: "&8[&a✔&8] &a使用称号卡成功"
   # 使用称号卡失败
-  useTitleCardFailureMsg: "&4使用称号卡失败"
+  useTitleCardFailureMsg: "&8[&c✘&8] &7使用称号卡失败"
   # 没有找到对应称号id的数据
-  noTitleFailureMsg: "&4很遗憾,该称号已经被删除了"
+  noTitleFailureMsg: "&8[&c✘&8] &7很遗憾,该称号已经被删除了"
 
 randomCard:
   # 生成的称号卡物品前缀, 可以修改,但是严禁为空和与普通称号卡相同
@@ -159,35 +147,35 @@ randomCard:
   titleCardLore:
     - ''
     - '&f[ &c称号卡说明 &f]'
-    - '&f&l>> &a功能：&f> 随机获取一个称号'
-    - '&f&l>> &a使用天数：&f> ${expirationTime}'
+    - '&8▪ &a功能: &f随机获取一个称号'
+    - '&8▪ &a使用天数: &f${expirationTime}'
     - ''
-    - '&6>>&4>>&5>> &f&l使用获取 &6<<&4<<&5<<'
+    - '&8[&a✔&8] &a点击使用'
   # 使用称号卡成功 ${titleCard}称号 ${day}天数
-  useTitleCardSucceedMsg: "&a使用随机称号卡成功,获得了 ${titleCard} ${day}"
+  useTitleCardSucceedMsg: "&8[&a✔&8] &a使用随机称号卡成功,获得了 ${titleCard} ${day}"
   # 使用称号卡失败
-  useTitleCardFailureMsg: "&4使用随机称号卡失败"
+  useTitleCardFailureMsg: "&8[&c✘&8] &7使用随机称号卡失败"
   # 没有找到对应称号id的数据
-  noTitleMsg: "&4很遗憾,你随机到了空气"
+  noTitleMsg: "&8[&a✔&8] &a很遗憾,你随机到了空气"
   # 没有找到对应称号id的数据
-  noTitle: "&4很遗憾,没有对应类型的称号"
+  noTitle: "&8[&a✔&8] &a很遗憾,没有对应类型的称号"
 
 view:
   # 变更名称
-  changeName: "&a请在聊天框中直接输入需要修改的称号名称,可使用颜色代码&"
+  changeName: "&8[&a!&8] &a请在聊天框中输入要修改的称号名称"
   # 变更类型
-  changeType: "&a请在聊天框中直接输入需要修改的类型(如果是变更物品类型,需手持物品),可选:"
+  changeType: "&8[&a!&8] &a请在聊天框中输入要修改的类型(如果是变更物品类型,需手持物品),可选:"
   # 变更物品
-  changeItem: "&a请主手持需要新增的物品,聊天框中直接输入: yes"
-  confirmFailureMsg: "&a输入的命令不是yes,变更程序已经退出"
+  changeItem: "&8[&a!&8] &a请主手持需要新增的物品,聊天框中输入: yes"
+  confirmFailureMsg: "&8[&a!&8] &a输入的命令不是yes,变更程序已经退出"
   # 变更时间
-  changeDay: "&a请在聊天框中直接输入需要修改的时间数字,0为永久"
+  changeDay: "&8[&a!&8] &a请在聊天框中输入要修改的时间(0为永久)"
   # 变更金额/物品
-  changeAmount: "&a请在聊天框中直接输入需要修改的价格/数量"
+  changeAmount: "&8[&a!&8] &a请在聊天框中输入要修改的价格/数量"
 
 # 用于输入指令时候tab自动提醒帮助(只建议翻译,不建议更改)
 tabHelp:
-  titleId: "请输入称号id"
+  titleId: "请输入称号ID"
   buffId: "请输入buffId"
   titleName: "请输入称号名称"
   titleDescription: "请输入称号描述可使用,换行"

@@ -1,5 +1,6 @@
 # gui标题
 title: "&f[&e称号商城&f]"
+size: 54
 
 # 默认称号的样式
 shop:
@@ -18,33 +19,34 @@ shop:
     info:
       - ''
       - '&f[ &c称号说明 &f]'
-      - '&f&l>> &a显示称号：&f> ${titleName}'
+      - '&8▪ &a显示称号: &f${titleName}'
+      - '&8▪ &a购买天数: &f${day}'
     description:
       - ''
       - '&f[ &c称号描述 &f]'
-      - '&c&l>> &a${description}'
+      - '&8▪ &a${description}'
     buff:
       - ''
       - '&f[ &c称号BUFF &f]'
-      - '&c&l>> &a${buff}'
+      - '&8▪ &a${buff}'
     particle:
       - ''
       - '&f[ &c称号粒子 &f]'
-      - '&c&l>> &a${particle}'
+      - '&8▪ &a${particle}'
     price:
       - ''
       - '&f[ &c称号价格 &f]'
-      - '&c&l>> &a购买花费 ${buyType} : ${price}  / ${day}'
+      - '&8▪ &a${buyType} : &f${price}'
     me:
       - ''
       - '&f[ &c个人经济 &f]'
-      - '&c&l>> &a当前拥有 &e${buyType} : ${playerMoney}'
+      - '&8▪ &a${buyType} : &f${playerMoney}'
     button:
       - ''
       - '${buyButton}'
 
-buyButton: "&6>>&4>>&5>> &f&l点击购买 &6<<&4<<&5<<"
-buyNoButton: "&6>>&4>>&5>> &4&l无法购买 &6<<&4<<&5<<"
+buyButton: "&8[&a✔&8] &a点击购买"
+buyNoButton: "&8[&c✘&8] &7无法购买"
 
 # 搜索
 search:

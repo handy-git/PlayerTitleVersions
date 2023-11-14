@@ -1,5 +1,6 @@
 # gui标题
 title: "&f[&e称号商城管理&f]"
+size: 54
 
 # 默认称号的样式
 shop:
@@ -15,24 +16,25 @@ shop:
   lore:
     - ''
     - '&f[ &c称号说明 &f]'
-    - '&f&l>> &a称号编号：&f> ${id}'
-    - '&f&l>> &a显示称号：&f> ${titleName}'
-    - '&f&l>> &a显示状态：&f> ${status}'
-    - '&f&l>> &a购买数量：&f> ${haveCount}'
+    - '&8▪ &a称号编号: &f${id}'
+    - '&8▪ &a显示称号: &f${titleName}'
+    - '&8▪ &a显示状态: &f${status}'
+    - '&8▪ &a购买数量: &f${haveCount}'
+    - '&8▪ &a购买天数: &f${day}'
     - ''
     - '&f[ &c称号描述 &f]'
-    - '&c&l>> &a${description}'
+    - '&8▪ &a${description}'
     - ''
     - '&f[ &c称号BUFF &f]'
-    - '&c&l>> &a${buff}'
+    - '&8▪ &a${buff}'
     - ''
     - '&f[ &c称号粒子 &f]'
-    - '&c&l>> &a${particle}'
+    - '&8▪ &a${particle}'
     - ''
     - '&f[ &c称号价格 &f]'
-    - '&c&l>> &a购买花费 ${buyType} : ${price}  / ${day}'
+    - '&8▪ &a${buyType} : ${price}'
     - ''
-    - '&6>>&4>>&5>> &f&l点击管理 &6<<&4<<&5<<'
+    - '&8[&a✔&8] &a点击管理'
 
 hide: "&4隐藏中"
 show: "&a显示中"

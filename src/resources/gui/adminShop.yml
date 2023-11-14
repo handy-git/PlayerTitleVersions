@@ -1,5 +1,6 @@
 # gui标题
 title: "&f[&e称号商城管理&f]"
+size: 54
 
 # 删除
 delete:
@@ -9,7 +10,7 @@ delete:
   material: REDSTONE
   isEnchant: false
   lore:
-    - " &8[&a✔&8] &7点击删除"
+    - " &8[&a✔&8] &a点击删除"
   custom-model-data: 0
 
 # 显示状态
@@ -22,9 +23,40 @@ status:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前状态 &8[${status}&8]'
+    - '&8▪ &7当前状态 &8[${status}&8]'
     - ''
-    - ' &8[&a✔&8] &7点击切换'
+    - ' &8[&a✔&8] &a点击切换'
+  custom-model-data: 0
+
+# 拥有玩家
+player:
+  enable: true
+  index: 22
+  name: "   &8[&a拥有玩家&8]"
+  material: "DIAMOND_CHESTPLATE"
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ &7购买数量 &8[${number}&8]'
+    - ''
+    - ' &8[&a✔&8] &a点击查看'
+  custom-model-data: 0
+
+# 拥有玩家子菜单内容
+playerView:
+  index: 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34,37,38,39,40,41,42,43
+  name: '&8[&a${player_name}&8]'
+  material: "PLAYER_HEAD"
+  isEnchant: false
+  lore:
+    - ''
+    - '&f[ &c玩家名称 &f]'
+    - '&c&l>> &a${player_name}'
+    - ''
+    - '&f[ &c到期时间 &f]'
+    - '&c&l>> &a${expiration_time}'
+    - ''
+    - ' &8[&a✔&8] &a点击删除'
   custom-model-data: 0
 
 # 变更名称
@@ -36,9 +68,9 @@ name:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前名称: ${titleName}'
+    - '&8▪ &7当前名称: &8${titleName}'
     - ''
-    - ' &8[&a✔&8] &7点击更改'
+    - ' &8[&a✔&8] &a点击更改'
   custom-model-data: 0
 
 # 变更类型
@@ -50,9 +82,9 @@ buyType:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前类型 &8[${buyType}&8]'
+    - '&8▪ &7当前类型 &8[${buyType}&8]'
     - ''
-    - ' &8[&a✔&8] &7点击更改'
+    - ' &8[&a✔&8] &a点击更改'
   custom-model-data: 0
 
 # 变更物品
@@ -64,9 +96,9 @@ item:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前物品 &8[&a${item}&8]'
+    - '&8▪ &7当前物品 &8[&a${item}&8]'
     - ''
-    - ' &8[&a✔&8] &7点击更改'
+    - ' &8[&a✔&8] &a点击更改'
   custom-model-data: 0
 
 # 变更价格
@@ -78,9 +110,9 @@ price:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前价格 &8[&a${price}&8]'
+    - '&8▪ &7当前价格 &8[&a${price}&8]'
     - ''
-    - ' &8[&a✔&8] &7点击更改'
+    - ' &8[&a✔&8] &a点击更改'
   custom-model-data: 0
 
 # 变更天数
@@ -92,9 +124,9 @@ day:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ 当前天数 &8[&a${day}&8]'
+    - '&8▪ &7当前天数 &8[&a${day}&8]'
     - ''
-    - ' &8[&a✔&8] &7点击更改'
+    - ' &8[&a✔&8] &a点击更改'
   custom-model-data: 0
 
 # 称号buff
@@ -107,7 +139,8 @@ buff:
   lore:
     - ''
     - '&f[ &c称号BUFF &f]'
-    - '&c&l>> &a${buff}'
+    - ''
+    - '&8▪ &a${buff}'
   custom-model-data: 0
 
 # 称号粒子
@@ -120,7 +153,8 @@ particle:
   lore:
     - ''
     - '&f[ &c称号粒子 &f]'
-    - '&c&l>> &a${particle}'
+    - ''
+    - '&8▪ &a${particle}'
   custom-model-data: 0
 
 # 描述
@@ -133,7 +167,8 @@ description:
   lore:
     - ''
     - '&f[ &c称号描述 &f]'
-    - '&c&l>> &a${description}'
+    - ''
+    - '&8▪ &a${description}'
   custom-model-data: 0
 
 # 返回按钮

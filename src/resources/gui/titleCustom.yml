@@ -1,5 +1,6 @@
 # gui标题
 title: "&0自定义称号"
+size: 27
 
 # 点券
 point:
@@ -18,8 +19,7 @@ point:
   # 在gui中的lore
   lore:
     - ''
-    - '&8▪ &7购买自定义称号所需费用'
-    - '&8▪ &7购买可在聊天框输入你要自定义的称号'
+    - '&8▪ &7购买 ${title_name} &7所需费用'
     - ''
     - '&8▪ &7需支付 &a${price} &7点券'
     - '&8▪ &7你拥有 &a${money} &7点券'
@@ -40,8 +40,7 @@ coin:
   isEnchant: false
   lore:
     - ''
-    - '&8▪ &7购买自定义称号所需费用'
-    - '&8▪ &7购买可在聊天框输入你要自定义的称号'
+    - '&8▪ &7购买 ${title_name} &7所需费用'
     - ''
     - '&8▪ &7需支付 &a${price} &7称号币'
     - '&8▪ &7你拥有 &a${money} &7称号币'
@@ -61,8 +60,7 @@ vault:
   custom-model-data: 0
   lore:
     - ''
-    - '&8▪ &7购买自定义称号所需费用'
-    - '&8▪ &7购买可在聊天框输入你要自定义的称号'
+    - '&8▪ &7购买 ${title_name} &7所需费用'
     - ''
     - '&8▪ &7需支付 &a${price} &7金币'
     - '&8▪ &7你拥有 &a${money} &7金币'
@@ -73,8 +71,8 @@ vault:
   day: 0
 
 # ${button}对应的变量
-yesButton: " &8[&a✔&8] &7点击进行支付"
-noButton: " &8[&c✘&8] &7你的余额不足"
+yesButton: " &8[&a✔&8] &a点击购买"
+noButton: " &8[&c✘&8] &7余额不足"
 
 # 返回按钮
 back:
@@ -84,15 +82,15 @@ back:
   material: barrier
   isEnchant: false
   lore:
-    - '&f- &7点击返回'
+    - '&f- &7点击取消定制'
   custom-model-data: 0
 
 # 创建提醒语言文件
-notMoneyFailureMsg: "&c你的余额不足 无法进行购买"
-customMsg: "&8[&a✔&8] &7请在聊天框输入&a称号名称，&7输入 &aT &7退出操作(不返还扣除资金)"
-cancelMsh: "&8[&a✔&8] &7操作已取消"
+notMoneyFailureMsg: "&8[&c✘&8] &7余额不足"
+customMsg: "&8[&a✔&8] &7请在聊天框输入&a称号名称，&7输入 &aT &7退出操作"
+cancelMsh: "&8[&a✔&8] &a操作已取消"
 nameBlackListFailureMsg: "&8[&c✘&8] &4称号名包含非法字符 &a${name}"
-buyMsg: "&8[&a✔&8] &7购买成功"
+buyMsg: "&8[&a✔&8] &a购买成功"
 
 # 称号名称黑名单
 nameBlackList:
