@@ -20,7 +20,7 @@ public enum BuffTypeEnum {
     POTION_EFFECT("potion_effect", "potion_effect"),
     MMO_ITEMS("MMOItems", "MMOItems"),
     ATTRIBUTE_SYSTEM("AttributeSystem", "AttributeSystem"),
-    ;
+    MYTHIC_LIB("MythicLib", "MythicLib");
 
     private final String buffType;
     private final String buffTypeName;

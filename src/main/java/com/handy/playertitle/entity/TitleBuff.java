@@ -33,6 +33,13 @@ public class TitleBuff implements Serializable {
     private String buffContent;
 
     /**
+     * buff介绍
+     *
+     * @since 3.5.3
+     */
+    private String description;
+
+    /**
      * 插件名称
      */
     private String pluginName;

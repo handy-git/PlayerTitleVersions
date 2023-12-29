@@ -23,6 +23,13 @@ public class TitleBuffParam {
     private String buffContent;
 
     /**
+     * buff介绍
+     *
+     * @since 3.5.3
+     */
+    private String description;
+
+    /**
      * 药水效果
      */
     private PotionEffectParam potionEffectParam;
