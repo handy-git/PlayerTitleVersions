@@ -26,7 +26,7 @@
 <dependency>
   <groupId>com.handy.playertitle</groupId>
   <artifactId>PlayerTitle</artifactId>
-  <version>3.4.6</version>
+  <version>3.5.3</version>
   <scope>provided</scope>
 </dependency>
 ```
