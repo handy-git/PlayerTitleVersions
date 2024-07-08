@@ -7,21 +7,15 @@
     <groupId>com.handy.playertitle</groupId>
     <artifactId>PlayerTitle</artifactId>
     <name>PlayerTitle</name>
-    <version>3.5.3</version>
+    <version>4.1.2</version>
     <description>一个有点好用的称号插件</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot-api.vesion>1.20.2-R0.1-SNAPSHOT</spigot-api.vesion>
-        <lombok.version>1.18.30</lombok.version>
+        <spigot-api.vesion>1.21-R0.1-SNAPSHOT</spigot-api.vesion>
+        <lombok.version>1.18.32</lombok.version>
+        <annotations.version>24.1.0</annotations.version>
     </properties>
-
-    <developers>
-        <developer>
-            <name>handy</name>
-            <email>handyplus@163.com</email>
-        </developer>
-    </developers>
 
     <dependencies>
         <dependency>
@@ -36,18 +30,13 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>${annotations.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-            <id>handy-maven</id>
-            <url>https://maven.handyplus.cn/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>handy-maven</id>
-            <url>https://maven.handyplus.cn/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <build>
         <plugins>
@@ -60,34 +49,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <!-- Source -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- javadoc -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.5.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

@@ -90,6 +90,17 @@ public enum BuyTypeEnum {
         return null;
     }
 
+
+    /**
+     * 获取对应枚举
+     *
+     * @param buyType 类型
+     * @return 枚举
+     */
+    public static BuyTypeEnum getEnumThrow(String buyType) {
+        return null;
+    }
+
     /**
      * 获取对应枚举
      *

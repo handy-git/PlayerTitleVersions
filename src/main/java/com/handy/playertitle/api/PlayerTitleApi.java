@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * PlayerTitleApi
@@ -145,6 +146,7 @@ public class PlayerTitleApi {
      * @param day        时间，0为永久
      * @return true/成功
      */
+    @Deprecated
     public boolean set(String playerName, Long titleId, int day) {
         return true;
     }
@@ -162,6 +164,20 @@ public class PlayerTitleApi {
     }
 
     /**
+     * 给玩家称号
+     *
+     * @param playerName 玩家名
+     * @param playerUuid 玩家uid
+     * @param titleId    称号编码
+     * @param day        时间，0为永久
+     * @return true/成功
+     * @since 4.0.0
+     */
+    public boolean set(String playerName, UUID playerUuid, Long titleId, int day) {
+        return true;
+    }
+
+    /**
      * 根据titleId和玩家名删除 玩家对应称号
      *
      * @param playerName 玩家名
@@ -169,7 +185,20 @@ public class PlayerTitleApi {
      * @return true成功
      * @since 2.10.1
      */
+    @Deprecated
     public boolean removePlayerTitle(String playerName, Long titleId) {
+        return true;
+    }
+
+    /**
+     * 根据titleId和玩家Uid删除 玩家对应称号
+     *
+     * @param playerUuid 玩家Uid
+     * @param titleId    称号id
+     * @return true成功
+     * @since 2.10.1
+     */
+    public boolean removePlayerTitle(UUID playerUuid, Long titleId) {
         return true;
     }
 
@@ -179,7 +208,19 @@ public class PlayerTitleApi {
      * @param player 玩家
      * @return 展示称号
      */
+    @Deprecated
     public TitlePlayer findByPlayerNameAndIsUse(Player player) {
+        return null;
+    }
+
+    /**
+     * 获取玩家正在使用的展示称号信息
+     *
+     * @param player 玩家
+     * @return 展示称号
+     * @since 4.0.0
+     */
+    public TitlePlayer findByPlayerUuidAndIsUse(Player player) {
         return null;
     }
 
@@ -190,7 +231,19 @@ public class PlayerTitleApi {
      * @return 属性称号
      * @since 3.3.0
      */
+    @Deprecated
     public TitlePlayer findByPlayerNameAndIsUseBuff(Player player) {
+        return null;
+    }
+
+    /**
+     * 获取玩家正在使用的属性称号信息
+     *
+     * @param player 玩家
+     * @return 属性称号
+     * @since 4.0.0
+     */
+    public TitlePlayer findByPlayerUuidAndIsUseBuff(Player player) {
         return null;
     }
 
@@ -201,7 +254,19 @@ public class PlayerTitleApi {
      * @return 粒子称号
      * @since 3.3.0
      */
+    @Deprecated
     public TitlePlayer findByPlayerNameAndIsUseParticle(Player player) {
+        return null;
+    }
+
+    /**
+     * 获取玩家正在使用的粒子称号信息
+     *
+     * @param player 玩家
+     * @return 粒子称号
+     * @since 4.0.0
+     */
+    public TitlePlayer findByPlayerUuidAndIsUseParticle(Player player) {
         return null;
     }
 
@@ -211,6 +276,7 @@ public class PlayerTitleApi {
      * @param playerName 玩家名
      * @return 称号币
      */
+    @Deprecated
     public Long getPlayerCoinNum(String playerName) {
         return 0L;
     }
@@ -222,6 +288,7 @@ public class PlayerTitleApi {
      * @param amount     数量
      * @return true/成功
      */
+    @Deprecated
     public boolean addCoin(String playerName, Long amount) {
         return true;
     }
@@ -233,7 +300,55 @@ public class PlayerTitleApi {
      * @param amount     数量
      * @return true/成功
      */
+    @Deprecated
     public boolean subtractCoin(String playerName, Long amount) {
+        return true;
+    }
+
+    /**
+     * 获取玩家称号币
+     *
+     * @param playerUuid 玩家uid
+     * @return 称号币
+     * @since 4.0.0
+     */
+    public Integer getPlayerCoinNum(UUID playerUuid) {
+        return 0;
+    }
+
+    /**
+     * 增加玩家称号币
+     *
+     * @param playerUuid 玩家uid
+     * @param amount     数量
+     * @return true/成功
+     * @since 4.0.0
+     */
+    public boolean addCoin(UUID playerUuid, Integer amount) {
+        return true;
+    }
+
+    /**
+     * 减少玩家称号币
+     *
+     * @param playerUuid 玩家uid
+     * @param amount     数量
+     * @return true/成功
+     * @since 4.0.0
+     */
+    public boolean subtractCoin(UUID playerUuid, Integer amount) {
+        return true;
+    }
+
+    /**
+     * 设置玩家称号币
+     *
+     * @param playerUuid 玩家uid
+     * @param amount     数量
+     * @return true/成功
+     * @since 4.0.0
+     */
+    public boolean setCoin(UUID playerUuid, Integer amount) {
         return true;
     }
 
@@ -243,7 +358,19 @@ public class PlayerTitleApi {
      * @param playerName 玩家名
      * @return 称号数量
      */
+    @Deprecated
     public Integer getPlayerTitleNum(String playerName) {
+        return 0;
+    }
+
+    /**
+     * 获取玩家称号数量
+     *
+     * @param playerUuid 玩家Uid
+     * @return 称号数量
+     * @since 4.0.0
+     */
+    public Integer getPlayerTitleNum(UUID playerUuid) {
         return 0;
     }
 
@@ -254,6 +381,7 @@ public class PlayerTitleApi {
      * @since 2.9.9
      */
     public void removeBuff(Player player) {
+
     }
 
     /**
@@ -263,6 +391,7 @@ public class PlayerTitleApi {
      * @since 2.9.9
      */
     public void setBuff(Player player) {
+
     }
 
     /**
@@ -273,7 +402,20 @@ public class PlayerTitleApi {
      * @return true 有, false 无
      * @since 3.1.1
      */
+    @Deprecated
     public boolean playerExistTitleId(String playerName, Integer titleId) {
+        return true;
+    }
+
+    /**
+     * 玩家是否有对应的称号ID
+     *
+     * @param playerUuid 玩家Uid
+     * @param titleId    称号id
+     * @return true 有, false 无
+     * @since 4.0.0
+     */
+    public boolean playerExistTitleId(UUID playerUuid, Integer titleId) {
         return true;
     }
 
@@ -284,7 +426,19 @@ public class PlayerTitleApi {
      * @return 所有称号ID
      * @since 3.4.1
      */
+    @Deprecated
     public List<Integer> findAllTitleIdByPlayerName(String playerName) {
+        return new ArrayList<>();
+    }
+
+    /**
+     * 获取玩家所有称号ID
+     *
+     * @param playerUuid 玩家uid
+     * @return 所有称号ID
+     * @since 4.0.0
+     */
+    public List<Integer> findAllTitleIdByPlayerUuid(UUID playerUuid) {
         return new ArrayList<>();
     }
 
